@@ -188,11 +188,11 @@
 
     /* ── HERO ────────────────────────────────── */
     .hero {
-      min-height: 100vh;
+      min-height: 85vh;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-      padding: 76px 64px 88px;
+      padding: 38px 64px 44px;
       position: relative;
       overflow: hidden;
     }
@@ -1371,9 +1371,10 @@
       btn.textContent = 'Solicitud enviada';
       btn.style.background = 'var(--accent)';
       setTimeout(() => {
-        btn.textContent = 'Solicitar llamada de diagnóstico';
+        btn.textContent = 'Aplicar solicitud';
         btn.style.background = '';
         e.target.reset();
+        document.getElementById('servicio').value = '';
       }, 3500);
     }
   </script>
