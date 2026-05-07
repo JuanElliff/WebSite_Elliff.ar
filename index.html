@@ -1258,15 +1258,18 @@
         </div>
 
         <div class="contact-form reveal d2">
-          <form onsubmit="handleForm(event)">
+          <form id="cform">
+            <input type="hidden" name="access_key" value="d5420d0c-5785-4606-ad6d-81865bff5873">
+            <input type="hidden" name="subject" value="Nuevo contacto desde el portfolio">
+            <input type="hidden" name="from_name" value="Portfolio Juan Cruz Elliff">
             <div class="f-row">
               <div class="f-group">
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" placeholder="Nombre completo" required>
+                <input type="text" id="nombre" name="name" placeholder="Nombre completo" required>
               </div>
               <div class="f-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" placeholder="nombre@empresa.com" required>
+                <input type="email" id="email" name="email" placeholder="nombre@empresa.com" required>
               </div>
             </div>
             <div class="f-group">
@@ -1281,7 +1284,7 @@
             </div>
             <div class="f-group">
               <label for="msg">¿Qué proceso desea optimizar?</label>
-              <textarea id="msg"
+              <textarea id="msg" name="msg"
                 placeholder="Describa brevemente la tarea o cuello de botella que hoy limita su crecimiento."
                 required></textarea>
             </div>
@@ -1365,17 +1368,50 @@
     }, { passive: true });
 
     // ── Form ────────────────────────────────────
-    function handleForm(e) {
-      e.preventDefault();
-      const btn = document.getElementById('fBtn');
-      btn.textContent = 'Solicitud enviada';
-      btn.style.background = 'var(--accent)';
-      setTimeout(() => {
-        btn.textContent = 'Aplicar solicitud';
-        btn.style.background = '';
-        e.target.reset();
-        document.getElementById('servicio').value = '';
-      }, 3500);
+    const cform = document.getElementById('cform');
+    if (cform) {
+      cform.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        const btn = document.getElementById('fBtn');
+        btn.textContent = 'Enviando...';
+        btn.disabled = true;
+
+        try {
+          const formData = new FormData(cform);
+          const servicio = document.getElementById('servicio').value;
+          const msg = document.getElementById('msg').value;
+          formData.set('message', 'Servicio: ' + (servicio || '—') + '\n\n' + msg);
+          formData.set('replyto', document.getElementById('email').value);
+
+          const res = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: formData,
+          });
+          const json = await res.json();
+
+          if (json.success) {
+            btn.textContent = 'Solicitud enviada';
+            btn.style.background = 'var(--accent)';
+            cform.reset();
+            document.getElementById('servicio').value = '';
+            setTimeout(() => {
+              btn.textContent = 'Aplicar solicitud';
+              btn.style.background = '';
+              btn.disabled = false;
+            }, 5000);
+          } else {
+            throw new Error(json.message || 'Error al enviar');
+          }
+        } catch {
+          btn.textContent = 'Error — escribime directo';
+          btn.style.background = 'rgba(220,80,80,0.3)';
+          setTimeout(() => {
+            btn.textContent = 'Aplicar solicitud';
+            btn.style.background = '';
+            btn.disabled = false;
+          }, 4000);
+        }
+      });
     }
   </script>
 </body>
