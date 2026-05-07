@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Juan Cruz Elliff — Consultoría en IA y Automatización</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --black:        #080808;
-      --black-2:      #0E0E0E;
-      --cream:        #EDE8E0;
-      --cream-dim:    rgba(237,232,224,0.50);
-      --cream-faint:  rgba(237,232,224,0.12);
-      --muted:        #4E4A45;
-      --muted-hi:     #7A756E;
-      --accent:       #C8B89A;
-      --line:         rgba(237,232,224,0.07);
-      --line-hi:      rgba(237,232,224,0.14);
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
-    html { scroll-behavior: smooth; }
+    :root {
+      --black: #080808;
+      --black-2: #0E0E0E;
+      --cream: #EDE8E0;
+      --cream-dim: rgba(237, 232, 224, 0.70);
+      --cream-faint: rgba(237, 232, 224, 0.20);
+      --muted: #8A857E;
+      --muted-hi: #A6A19A;
+      --accent: #C8B89A;
+      --line: rgba(237, 232, 224, 0.10);
+      --line-hi: rgba(237, 232, 224, 0.20);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       background: var(--black);
@@ -36,8 +47,13 @@
       -moz-osx-font-smoothing: grayscale;
     }
 
-    ::-webkit-scrollbar { width: 1px; }
-    ::-webkit-scrollbar-thumb { background: var(--muted); }
+    ::-webkit-scrollbar {
+      width: 1px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--muted);
+    }
 
     /* ── UTILITY ─────────────────────────────── */
     .u-label {
@@ -61,8 +77,9 @@
       transition: background 0.5s, border-color 0.5s;
       border-bottom: 1px solid transparent;
     }
+
     nav.scrolled {
-      background: rgba(8,8,8,0.90);
+      background: rgba(8, 8, 8, 0.90);
       backdrop-filter: blur(28px);
       -webkit-backdrop-filter: blur(28px);
       border-bottom-color: var(--line);
@@ -82,6 +99,7 @@
       align-items: center;
       gap: 40px;
     }
+
     .nav-links a {
       font-size: 0.65rem;
       letter-spacing: 0.18em;
@@ -90,7 +108,10 @@
       text-decoration: none;
       transition: color 0.3s;
     }
-    .nav-links a:hover { color: var(--cream); }
+
+    .nav-links a:hover {
+      color: var(--cream);
+    }
 
     .nav-cta {
       font-size: 0.65rem;
@@ -102,7 +123,10 @@
       padding-bottom: 2px;
       transition: border-color 0.3s !important;
     }
-    .nav-cta:hover { border-color: var(--cream-dim) !important; }
+
+    .nav-cta:hover {
+      border-color: var(--cream-dim) !important;
+    }
 
     /* mobile */
     .nav-toggle {
@@ -114,23 +138,32 @@
       cursor: pointer;
       padding: 4px;
     }
+
     .nav-toggle span {
       display: block;
-      width: 22px; height: 1px;
+      width: 22px;
+      height: 1px;
       background: var(--cream);
       transition: all 0.3s;
     }
+
     .nav-mobile {
       display: none;
       position: absolute;
-      top: 76px; left: 0; right: 0;
-      background: rgba(8,8,8,0.98);
+      top: 76px;
+      left: 0;
+      right: 0;
+      background: rgba(8, 8, 8, 0.98);
       padding: 36px 24px 44px;
       flex-direction: column;
       gap: 28px;
       border-bottom: 1px solid var(--line-hi);
     }
-    .nav-mobile.open { display: flex; }
+
+    .nav-mobile.open {
+      display: flex;
+    }
+
     .nav-mobile a {
       font-size: 0.7rem;
       letter-spacing: 0.18em;
@@ -140,9 +173,17 @@
     }
 
     @media (max-width: 768px) {
-      nav { padding: 0 24px; }
-      .nav-links { display: none; }
-      .nav-toggle { display: flex; }
+      nav {
+        padding: 0 24px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .nav-toggle {
+        display: flex;
+      }
     }
 
     /* ── HERO ────────────────────────────────── */
@@ -151,7 +192,7 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-      padding: 0 64px 88px;
+      padding: 76px 64px 88px;
       position: relative;
       overflow: hidden;
     }
@@ -166,7 +207,7 @@
       font-size: clamp(16rem, 26vw, 30rem);
       font-weight: 300;
       line-height: 0.9;
-      color: rgba(237,232,224,0.022);
+      color: rgba(237, 232, 224, 0.022);
       pointer-events: none;
       user-select: none;
       letter-spacing: -0.05em;
@@ -176,7 +217,8 @@
     /* Thin horizontal line through hero */
     .hero-line-deco {
       position: absolute;
-      left: 0; right: 0;
+      left: 0;
+      right: 0;
       top: 50%;
       height: 1px;
       background: var(--line);
@@ -192,7 +234,7 @@
     .hero-eyebrow {
       margin-bottom: 44px;
       opacity: 0;
-      animation: fadeUp 0.9s cubic-bezier(0.16,1,0.3,1) 0.2s forwards;
+      animation: fadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
     }
 
     /* Line-reveal hero headline */
@@ -204,29 +246,53 @@
       letter-spacing: -0.025em;
       margin-bottom: 56px;
     }
+
     .hero-headline-wrap {
       overflow: hidden;
       display: block;
+      padding-bottom: 0.18em;
+      margin-bottom: -0.18em;
     }
+
     .hero-headline-line {
       display: block;
       transform: translateY(108%);
-      animation: lineReveal 1.1s cubic-bezier(0.16,1,0.3,1) forwards;
+      animation: lineReveal 1.1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     }
-    .hero-headline-line.l1 { animation-delay: 0.35s; }
-    .hero-headline-line.l2 { animation-delay: 0.50s; }
-    .hero-headline-line.l3 { animation-delay: 0.65s; }
+
+    .hero-headline-line.l1 {
+      animation-delay: 0.35s;
+    }
+
+    .hero-headline-line.l2 {
+      animation-delay: 0.50s;
+    }
+
+    .hero-headline-line.l3 {
+      animation-delay: 0.65s;
+    }
+
     .hero-headline-line em {
       font-style: italic;
       color: var(--cream-dim);
     }
 
     @keyframes lineReveal {
-      to { transform: translateY(0); }
+      to {
+        transform: translateY(0);
+      }
     }
+
     @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(16px); }
-      to   { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(16px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     .hero-foot {
@@ -236,7 +302,7 @@
       gap: 40px;
       flex-wrap: wrap;
       opacity: 0;
-      animation: fadeUp 1s cubic-bezier(0.16,1,0.3,1) 0.9s forwards;
+      animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.9s forwards;
     }
 
     .hero-sub {
@@ -258,20 +324,31 @@
       text-decoration: none;
       transition: gap 0.4s;
     }
-    .hero-btn:hover { gap: 22px; }
+
+    .hero-btn:hover {
+      gap: 22px;
+    }
+
     .hero-btn-line {
       display: block;
-      width: 40px; height: 1px;
+      width: 40px;
+      height: 1px;
       background: var(--cream);
       position: relative;
       transition: width 0.4s;
     }
-    .hero-btn:hover .hero-btn-line { width: 56px; }
+
+    .hero-btn:hover .hero-btn-line {
+      width: 56px;
+    }
+
     .hero-btn-line::after {
       content: '';
       position: absolute;
-      right: 0; top: -3px;
-      width: 7px; height: 7px;
+      right: 0;
+      top: -3px;
+      width: 7px;
+      height: 7px;
       border-right: 1px solid var(--cream);
       border-top: 1px solid var(--cream);
       transform: rotate(45deg);
@@ -280,13 +357,15 @@
     /* Scroll indicator */
     .hero-scroll {
       position: absolute;
-      bottom: 88px; right: 64px;
+      bottom: 88px;
+      right: 64px;
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 12px;
       z-index: 2;
     }
+
     .hero-scroll-text {
       font-size: 0.55rem;
       letter-spacing: 0.25em;
@@ -294,23 +373,44 @@
       color: var(--muted);
       writing-mode: vertical-rl;
     }
+
     .hero-scroll-bar {
       width: 1px;
       height: 64px;
       background: linear-gradient(to bottom, var(--cream-faint), transparent);
       animation: scrollPulse 2.8s ease-in-out infinite;
     }
+
     @keyframes scrollPulse {
-      0%,100% { opacity: 0.25; }
-      50% { opacity: 0.7; }
+
+      0%,
+      100% {
+        opacity: 0.25;
+      }
+
+      50% {
+        opacity: 0.7;
+      }
     }
 
     /* ── SECTIONS BASE ───────────────────────── */
-    .section { padding: 148px 64px; }
-    .section-dark { background: var(--black-2); }
-    .container { max-width: 1200px; margin: 0 auto; }
+    .section {
+      padding: 148px 64px;
+    }
 
-    .hr { border: none; border-top: 1px solid var(--line); }
+    .section-dark {
+      background: var(--black-2);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .hr {
+      border: none;
+      border-top: 1px solid var(--line);
+    }
 
     /* ── MANIFIESTO ──────────────────────────── */
     .manifesto-grid {
@@ -339,6 +439,7 @@
       flex-direction: column;
       gap: 28px;
     }
+
     .m-num-val {
       font-family: 'Cormorant', serif;
       font-size: 3rem;
@@ -348,6 +449,7 @@
       color: var(--cream);
       margin-bottom: 4px;
     }
+
     .m-num-lbl {
       font-size: 0.6rem;
       letter-spacing: 0.18em;
@@ -366,6 +468,7 @@
       color: var(--cream);
       margin-bottom: 44px;
     }
+
     .manifesto-statement em {
       font-style: italic;
       color: var(--cream-dim);
@@ -384,6 +487,7 @@
       gap: 8px;
       margin-top: 36px;
     }
+
     .m-tag {
       font-size: 0.58rem;
       letter-spacing: 0.18em;
@@ -401,6 +505,7 @@
       align-items: end;
       margin-bottom: 80px;
     }
+
     .services-head-right {
       font-size: 0.85rem;
       color: var(--muted-hi);
@@ -419,24 +524,34 @@
       position: relative;
       transition: border-top-color 0.5s;
     }
-    .service-row:last-child { border-bottom: 1px solid var(--line-hi); }
+
+    .service-row:last-child {
+      border-bottom: 1px solid var(--line-hi);
+    }
+
     .service-row::after {
       content: '';
       position: absolute;
       inset: 0;
-      background: rgba(237,232,224,0.012);
+      background: rgba(237, 232, 224, 0.012);
       opacity: 0;
       transition: opacity 0.4s;
       pointer-events: none;
     }
-    .service-row:hover { border-top-color: rgba(237,232,224,0.28); }
-    .service-row:hover::after { opacity: 1; }
+
+    .service-row:hover {
+      border-top-color: rgba(237, 232, 224, 0.28);
+    }
+
+    .service-row:hover::after {
+      opacity: 1;
+    }
 
     .srv-num {
       font-family: 'Cormorant', serif;
       font-size: 0.95rem;
       font-weight: 300;
-      color: var(--accent);
+      color: var(--muted);
       letter-spacing: 0.06em;
       padding-top: 10px;
     }
@@ -451,7 +566,10 @@
       letter-spacing: -0.015em;
       margin-bottom: 20px;
     }
-    .srv-title em { font-style: italic; }
+
+    .srv-title em {
+      font-style: italic;
+    }
 
     .srv-desc {
       font-size: 0.86rem;
@@ -466,6 +584,7 @@
       gap: 8px;
       margin-top: 24px;
     }
+
     .srv-chip {
       font-size: 0.58rem;
       letter-spacing: 0.16em;
@@ -479,13 +598,15 @@
       text-align: right;
       padding-top: 10px;
     }
+
     .srv-price-label {
       font-size: 0.58rem;
       letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: var(--muted);
+      color: var(--muted-hi);
       margin-bottom: 8px;
     }
+
     .srv-price-value {
       font-family: 'Cormorant', serif;
       font-size: 2.4rem;
@@ -494,6 +615,7 @@
       letter-spacing: -0.02em;
       color: var(--cream);
     }
+
     .srv-price-sub {
       font-size: 0.62rem;
       color: var(--muted);
@@ -509,9 +631,11 @@
       border-top: 1px solid var(--line);
       border-bottom: 1px solid var(--line);
     }
+
     .statement-pre {
       margin-bottom: 40px;
     }
+
     .statement-text {
       font-family: 'Cormorant', serif;
       font-weight: 300;
@@ -521,10 +645,12 @@
       max-width: 940px;
       margin: 0 auto 48px;
     }
+
     .statement-text em {
       font-style: italic;
       color: var(--cream-dim);
     }
+
     .statement-sub {
       font-size: 0.85rem;
       color: var(--muted-hi);
@@ -549,7 +675,10 @@
       letter-spacing: -0.025em;
       margin-bottom: 32px;
     }
-    .contact-headline em { font-style: italic; }
+
+    .contact-headline em {
+      font-style: italic;
+    }
 
     .contact-body {
       font-size: 0.86rem;
@@ -564,6 +693,7 @@
       flex-direction: column;
       gap: 18px;
     }
+
     .c-item {
       display: flex;
       align-items: baseline;
@@ -571,7 +701,11 @@
       border-bottom: 1px solid var(--line);
       padding-bottom: 18px;
     }
-    .c-item:last-child { border-bottom: none; }
+
+    .c-item:last-child {
+      border-bottom: none;
+    }
+
     .c-lbl {
       font-size: 0.58rem;
       letter-spacing: 0.2em;
@@ -580,25 +714,34 @@
       width: 88px;
       flex-shrink: 0;
     }
+
     .c-val {
       font-size: 0.86rem;
       color: var(--cream-dim);
       text-decoration: none;
       transition: color 0.3s;
     }
-    .c-val:hover { color: var(--cream); }
+
+    .c-val:hover {
+      color: var(--cream);
+    }
 
     /* Form */
     .contact-form {}
-    .f-group { margin-bottom: 28px; }
+
+    .f-group {
+      margin-bottom: 28px;
+    }
+
     .f-group label {
       display: block;
-      font-size: 0.58rem;
-      letter-spacing: 0.2em;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: var(--muted);
+      color: var(--muted-hi);
       margin-bottom: 12px;
     }
+
     .f-group input,
     .f-group textarea {
       width: 100%;
@@ -615,20 +758,28 @@
       border-radius: 0;
       -webkit-appearance: none;
     }
+
     .f-group input::placeholder,
     .f-group textarea::placeholder {
       color: var(--muted);
-      opacity: 0.45;
+      opacity: 1;
     }
+
     .f-group input:focus,
     .f-group textarea:focus {
       border-bottom-color: var(--cream-dim);
     }
+
     .f-group textarea {
       resize: none;
       min-height: 96px;
     }
-    .f-row { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+
+    .f-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+    }
 
     .f-submit {
       background: var(--cream);
@@ -644,13 +795,17 @@
       margin-top: 12px;
       transition: background 0.3s;
     }
-    .f-submit:hover { background: var(--accent); }
+
+    .f-submit:hover {
+      background: var(--accent);
+    }
 
     /* ── FOOTER ──────────────────────────────── */
     footer {
       padding: 44px 64px;
       border-top: 1px solid var(--line);
     }
+
     .footer-inner {
       max-width: 1200px;
       margin: 0 auto;
@@ -660,6 +815,7 @@
       gap: 24px;
       flex-wrap: wrap;
     }
+
     .f-name {
       font-family: 'Cormorant', serif;
       font-size: 0.95rem;
@@ -667,13 +823,19 @@
       letter-spacing: 0.1em;
       color: var(--cream-dim);
     }
+
     .f-copy {
       font-size: 0.6rem;
       letter-spacing: 0.16em;
       text-transform: uppercase;
       color: var(--muted);
     }
-    .f-links { display: flex; gap: 32px; }
+
+    .f-links {
+      display: flex;
+      gap: 32px;
+    }
+
     .f-links a {
       font-size: 0.6rem;
       letter-spacing: 0.16em;
@@ -682,59 +844,164 @@
       text-decoration: none;
       transition: color 0.3s;
     }
-    .f-links a:hover { color: var(--cream-dim); }
+
+    .f-links a:hover {
+      color: var(--cream-dim);
+    }
 
     /* ── REVEAL ANIMATIONS ───────────────────── */
     .reveal {
       opacity: 0;
       transform: translateY(22px);
-      transition: opacity 1s cubic-bezier(0.16,1,0.3,1),
-                  transform 1s cubic-bezier(0.16,1,0.3,1);
+      transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 1s cubic-bezier(0.16, 1, 0.3, 1);
     }
-    .reveal.in { opacity: 1; transform: translateY(0); }
+
+    .reveal.in {
+      opacity: 1;
+      transform: translateY(0);
+    }
 
     .reveal-fade {
       opacity: 0;
       transition: opacity 1.1s ease;
     }
-    .reveal-fade.in { opacity: 1; }
 
-    .d1 { transition-delay: 0.10s; }
-    .d2 { transition-delay: 0.22s; }
-    .d3 { transition-delay: 0.34s; }
-    .d4 { transition-delay: 0.46s; }
+    .reveal-fade.in {
+      opacity: 1;
+    }
+
+    .d1 {
+      transition-delay: 0.10s;
+    }
+
+    .d2 {
+      transition-delay: 0.22s;
+    }
+
+    .d3 {
+      transition-delay: 0.34s;
+    }
+
+    .d4 {
+      transition-delay: 0.46s;
+    }
 
     /* ── RESPONSIVE ──────────────────────────── */
     @media (max-width: 1100px) {
-      .service-row { grid-template-columns: 44px 1fr; gap: 36px; }
-      .srv-price { grid-column: 2; text-align: left; }
-      .services-head { grid-template-columns: 1fr; gap: 24px; }
-      .services-head-right { justify-self: start; }
-      .manifesto-grid { grid-template-columns: 1fr; gap: 56px; }
+      .service-row {
+        grid-template-columns: 44px 1fr;
+        gap: 36px;
+      }
+
+      .srv-price {
+        grid-column: 2;
+        text-align: left;
+      }
+
+      .services-head {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .services-head-right {
+        justify-self: start;
+      }
+
+      .manifesto-grid {
+        grid-template-columns: 1fr;
+        gap: 56px;
+      }
     }
+
     @media (max-width: 768px) {
-      .section { padding: 100px 24px; }
-      .statement { padding: 100px 24px; }
-      .hero { padding: 0 24px 60px; }
-      .hero-scroll { display: none; }
-      .hero-headline { font-size: clamp(3rem, 13vw, 5rem); }
-      .contact-grid { grid-template-columns: 1fr; gap: 64px; }
-      .service-row { grid-template-columns: 1fr; gap: 16px; padding: 44px 0; }
-      .srv-num { display: none; }
-      .srv-price { text-align: left; }
-      .f-row { grid-template-columns: 1fr; gap: 0; }
-      footer { padding: 36px 24px; }
-      .footer-inner { flex-direction: column; align-items: flex-start; gap: 12px; }
+      .section {
+        padding: 100px 24px;
+      }
+
+      .statement {
+        padding: 100px 24px;
+      }
+
+      .hero {
+        padding: 0 24px 60px;
+      }
+
+      .hero-scroll {
+        display: none;
+      }
+
+      .hero-headline {
+        font-size: clamp(3rem, 13vw, 5rem);
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 64px;
+      }
+
+      .service-row {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 44px 0;
+      }
+
+      .srv-num {
+        display: none;
+      }
+
+      .srv-price {
+        text-align: left;
+      }
+
+      .f-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+
+      footer {
+        padding: 36px 24px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
     }
+
     @media (prefers-reduced-motion: reduce) {
-      .reveal, .reveal-fade { opacity: 1; transform: none; transition: none; }
-      .hero-headline-line { transform: none; animation: none; }
-      .hero-eyebrow, .hero-foot { opacity: 1; transform: none; animation: none; }
-      .hero-scroll-bar { animation: none; }
-      .hero-ghost { display: none; }
+
+      .reveal,
+      .reveal-fade {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+
+      .hero-headline-line {
+        transform: none;
+        animation: none;
+      }
+
+      .hero-eyebrow,
+      .hero-foot {
+        opacity: 1;
+        transform: none;
+        animation: none;
+      }
+
+      .hero-scroll-bar {
+        animation: none;
+      }
+
+      .hero-ghost {
+        display: none;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <!-- ═══════════════════ NAV ═══════════════════ -->
@@ -751,9 +1018,9 @@
       <span></span><span></span>
     </button>
     <div class="nav-mobile" id="navMobile">
-      <a href="#sobre"    onclick="closeNav()">Criterio</a>
+      <a href="#sobre" onclick="closeNav()">Criterio</a>
       <a href="#servicios" onclick="closeNav()">Soluciones</a>
-      <a href="#contacto"  onclick="closeNav()">Agendar Llamada</a>
+      <a href="#contacto" onclick="closeNav()">Agendar Llamada</a>
     </div>
   </nav>
 
@@ -775,7 +1042,8 @@
 
       <div class="hero-foot">
         <p class="hero-sub">
-          Diseño e implemento sistemas que ejecutan tareas críticas de forma autónoma. Traduzco procesos complejos en infraestructura digital de alto impacto para quienes buscan escalar con orden y tecnología real.
+          Diseño e implemento sistemas que ejecutan tareas críticas de forma autónoma. Traduzco procesos complejos en
+          infraestructura digital de alto impacto para quienes buscan escalar con orden y tecnología real.
         </p>
         <a href="#contacto" class="hero-btn">
           Agendar llamada de diagnóstico
@@ -798,7 +1066,9 @@
         <div class="manifesto-left">
           <div class="u-label reveal">Criterio Profesional</div>
           <p class="manifesto-about reveal d1">
-            Desarrollo la infraestructura digital que permite a una empresa crecer sin saturar su estructura humana. Trabajo con organizaciones que entienden que el crecimiento no depende de más horas de gestión, sino de mejores sistemas de ejecución. Mi enfoque es técnico, pragmático y orientado a resultados tangibles.
+            Desarrollo la infraestructura digital que permite a una empresa crecer sin saturar su estructura humana.
+            Trabajo con organizaciones que entienden que el crecimiento no depende de más horas de gestión, sino de
+            mejores sistemas de ejecución. Mi enfoque es técnico, pragmático y orientado a resultados tangibles.
           </p>
 
           <div class="manifesto-nums">
@@ -815,12 +1085,15 @@
 
         <div class="manifesto-right">
           <p class="manifesto-statement reveal">
-            No entrego maquetas ni promesas. Entrego <em>activos digitales</em> con rigor de ingeniería y velocidad de consultoría.
+            No entrego maquetas ni promesas. Entrego <em>activos digitales</em> con rigor de ingeniería y velocidad de
+            consultoría.
           </p>
           <p class="manifesto-body reveal d1">
-            Me especializo en estructuras donde la operación diaria consume el tiempo estratégico del equipo. Mi labor es identificar procesos críticos y delegarlos en sistemas que garantizan consistencia y precisión 24/7.
+            Me especializo en estructuras donde la operación diaria consume el tiempo estratégico del equipo. Mi labor
+            es identificar procesos críticos y delegarlos en sistemas que garantizan consistencia y precisión 24/7.
             <br><br>
-            Cada proyecto finaliza con una solución integrada a su ecosistema actual, diseñada para absorber demanda sin incrementar costos fijos.
+            Cada proyecto finaliza con una solución integrada a su ecosistema actual, diseñada para absorber demanda sin
+            incrementar costos fijos.
           </p>
           <div class="manifesto-tags reveal d2">
             <span class="m-tag">Procesamiento de Datos</span>
@@ -844,12 +1117,15 @@
       <div class="services-head">
         <div>
           <div class="u-label reveal">Soluciones Estratégicas</div>
-          <h2 style="font-family:'Cormorant',serif; font-weight:300; font-size:clamp(2.2rem,4vw,4rem); letter-spacing:-0.02em; line-height:1.1; margin-top:16px;" class="reveal d1">
+          <h2
+            style="font-family:'Cormorant',serif; font-weight:300; font-size:clamp(2.2rem,4vw,4rem); letter-spacing:-0.02em; line-height:1.1; margin-top:16px;"
+            class="reveal d1">
             Implementaciones<br><em style="font-style:italic; color:var(--cream-dim)">de alto impacto.</em>
           </h2>
         </div>
         <p class="services-head-right reveal d2">
-          Modelos de trabajo directo: alcances definidos, plazos breves y sistemas que funcionan desde el despliegue. El objetivo es la autonomía operativa.
+          Modelos de trabajo directo: alcances definidos, plazos breves y sistemas que funcionan desde el despliegue. El
+          objetivo es la autonomía operativa.
         </p>
       </div>
 
@@ -859,7 +1135,8 @@
         <div class="srv-body">
           <h3 class="srv-title">Infraestructura Web<br><em>con lógica avanzada.</em></h3>
           <p class="srv-desc">
-            Despliegue de sitios de alto rendimiento con captura inteligente de leads y sistemas de respuesta con entendimiento de contexto comercial.
+            Despliegue de sitios de alto rendimiento con captura inteligente de leads y sistemas de respuesta con
+            entendimiento de contexto comercial.
           </p>
           <div class="srv-chips">
             <span class="srv-chip">Desarrollo a medida</span>
@@ -880,7 +1157,8 @@
         <div class="srv-body">
           <h3 class="srv-title">Gestión de Canales<br><em>desatendida.</em></h3>
           <p class="srv-desc">
-            Sistemas de atención autónoma que resuelven consultas, califican prospectos y derivan casos críticos a humanos de forma inteligente.
+            Sistemas de atención autónoma que resuelven consultas, califican prospectos y derivan casos críticos a
+            humanos de forma inteligente.
           </p>
           <div class="srv-chips">
             <span class="srv-chip">Omnicanalidad</span>
@@ -901,7 +1179,8 @@
         <div class="srv-body">
           <h3 class="srv-title">Automatización de<br><em>Back-Office.</em></h3>
           <p class="srv-desc">
-            Eliminación de la carga administrativa mediante procesamiento automático de datos, reportes dinámicos e interconexión total de herramientas.
+            Eliminación de la carga administrativa mediante procesamiento automático de datos, reportes dinámicos e
+            interconexión total de herramientas.
           </p>
           <div class="srv-chips">
             <span class="srv-chip">BI & Data</span>
@@ -933,7 +1212,7 @@
         Colaboro con empresas que están listas para dejar de gestionar procesos y empezar a auditar resultados.
       </p>
       <a href="#contacto" class="hero-btn reveal d2" style="justify-content:center;">
-        Agendar llamada de diagnóstico
+        Agendar llamada con Juan Cruz
         <span class="hero-btn-line" aria-hidden="true"></span>
       </a>
     </div>
@@ -950,7 +1229,8 @@
             Analicemos su<br><em>próximo salto.</em>
           </h2>
           <p class="contact-body reveal d2">
-            El primer paso es una llamada de diagnóstico de 15 minutos para entender su operación actual y evaluar la viabilidad técnica de una implementación.
+            El primer paso es una llamada de diagnóstico de 15 minutos para entender su operación actual y evaluar la
+            viabilidad técnica de una implementación.
           </p>
 
           <div class="contact-items reveal d3">
@@ -964,7 +1244,8 @@
             </div>
             <div class="c-item">
               <span class="c-lbl">LinkedIn</span>
-              <a href="https://www.linkedin.com/in/elliffjuancruz" target="_blank" rel="noopener" class="c-val">Juan Cruz Elliff</a>
+              <a href="https://www.linkedin.com/in/elliffjuancruz" target="_blank" rel="noopener" class="c-val">Juan
+                Cruz Elliff</a>
             </div>
             <!--<div class="c-item">
               <span class="c-lbl">Instagram</span>
@@ -981,26 +1262,32 @@
                 <input type="text" id="nombre" placeholder="Nombre completo" required>
               </div>
               <div class="f-group">
-                <label for="empresa">Empresa / Sitio Web</label>
-                <input type="text" id="empresa" placeholder="Empresa o URL">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="nombre@empresa.com" required>
               </div>
             </div>
             <div class="f-group">
-              <label for="email">Email corporativo</label>
-              <input type="email" id="email" placeholder="nombre@empresa.com" required>
+              <label for="servicio">Servicio de interés</label>
+              <select id="servicio" name="servicio" required style="width:100%; background:transparent; border:none; border-bottom:1px solid var(--line-hi); padding:10px 0 14px; color:var(--cream); font-family:'Inter',sans-serif; font-size:0.88rem; font-weight:300; outline:none; transition:border-color 0.3s; border-radius:0; -webkit-appearance:none; appearance:none; cursor:pointer;">
+                <option value="" disabled selected style="background:var(--black); color:var(--muted);">Elegir servicio</option>
+                <option value="web" style="background:var(--black);">Infraestructura Web con lógica avanzada</option>
+                <option value="canales" style="background:var(--black);">Gestión de Canales desatendida</option>
+                <option value="backoffice" style="background:var(--black);">Automatización de Back-Office</option>
+                <option value="otro" style="background:var(--black);">Otro / Servicio personalizado</option>
+              </select>
             </div>
             <div class="f-group">
               <label for="msg">¿Qué proceso desea optimizar?</label>
-              <textarea id="msg" placeholder="Describa brevemente la tarea o cuello de botella que hoy limita su crecimiento." required></textarea>
+              <textarea id="msg"
+                placeholder="Describa brevemente la tarea o cuello de botella que hoy limita su crecimiento."
+                required></textarea>
             </div>
-            <button type="submit" class="f-submit" id="fBtn">Solicitar llamada de diagnóstico</button>
+            <button type="submit" class="f-submit" id="fBtn">Aplicar solicitud</button>
           </form>
         </div>
-
       </div>
     </div>
   </section>
-
   <!-- ═══════════════════ FOOTER ════════════════ -->
   <footer>
     <div class="footer-inner">
@@ -1022,7 +1309,7 @@
     }, { passive: true });
 
     // ── Nav mobile ──────────────────────────────
-    const navBtn    = document.getElementById('navBtn');
+    const navBtn = document.getElementById('navBtn');
     const navMobile = document.getElementById('navMobile');
     if (navBtn && navMobile) {
       navBtn.addEventListener('click', () => navMobile.classList.toggle('open'));
@@ -1088,4 +1375,5 @@
     }
   </script>
 </body>
+
 </html>
