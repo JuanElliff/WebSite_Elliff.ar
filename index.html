@@ -1,34 +1,35 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-AR">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Juan Cruz Elliff — Consultoría en IA y Automatización</title>
+  <title>Juan Cruz Elliff — Automatización · Datos · IA para PyMEs</title>
 
-  <meta name="description" content="Consultoría en IA y automatización: diseño e implemento sistemas autónomos que ejecutan tareas críticas. Infraestructura digital para escalar sin saturar tu equipo. Diagnóstico inicial sin cargo.">
+  <meta name="description" content="Automatizo tareas operativas, atención de consultas y reportes para PyMEs. Sistemas que quedan funcionando e integrados a tus herramientas. Diagnóstico inicial sin cargo.">
   <meta name="author" content="Juan Cruz Elliff">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="theme-color" content="#080808">
+  <meta name="theme-color" content="#13203A">
   <link rel="canonical" href="https://juancruz.elliff.ar/">
 
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_AR">
   <meta property="og:url" content="https://juancruz.elliff.ar/">
   <meta property="og:site_name" content="Juan Cruz Elliff">
-  <meta property="og:title" content="Juan Cruz Elliff — Consultoría en IA y Automatización">
-  <meta property="og:description" content="Sistemas autónomos que ejecutan tareas críticas. Infraestructura digital para escalar con orden y tecnología real.">
+  <meta property="og:title" content="Juan Cruz Elliff — Automatización · Datos · IA para PyMEs">
+  <meta property="og:description" content="Sistemas que se encargan del trabajo repetitivo: consultas, carga de datos y reportes. Diagnóstico inicial sin cargo.">
   <meta property="og:image" content="https://juancruz.elliff.ar/og-cover.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Juan Cruz Elliff — Consultoría en IA y Automatización">
+  <meta property="og:image:alt" content="Monograma JCE y nombre Juan Cruz Elliff sobre fondo marino">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Juan Cruz Elliff — Consultoría en IA y Automatización">
-  <meta name="twitter:description" content="Sistemas autónomos que ejecutan tareas críticas. Escalá con orden y tecnología real.">
+  <meta name="twitter:title" content="Juan Cruz Elliff — Automatización · Datos · IA para PyMEs">
+  <meta name="twitter:description" content="Sistemas que se encargan del trabajo repetitivo: consultas, carga de datos y reportes.">
   <meta name="twitter:image" content="https://juancruz.elliff.ar/og-cover.jpg">
 
   <script type="application/ld+json">
@@ -40,28 +41,26 @@
         "@id": "https://juancruz.elliff.ar/#person",
         "name": "Juan Cruz Elliff",
         "url": "https://juancruz.elliff.ar/",
-        "jobTitle": "Consultor en IA y Automatización",
+        "jobTitle": "Consultor en Automatización, Datos e IA",
         "email": "mailto:jcelliff@gmail.com",
         "telephone": "+5492346331233",
-        "sameAs": [
-          "https://www.linkedin.com/in/elliffjuancruz",
-          "https://instagram.com/juanelliff_"
-        ]
+        "knowsAbout": ["SQL", "Python", "Power BI", "Automatización de procesos", "Inteligencia artificial"],
+        "sameAs": ["https://www.linkedin.com/in/elliffjuancruz"]
       },
       {
         "@type": "ProfessionalService",
         "@id": "https://juancruz.elliff.ar/#service",
-        "name": "Juan Cruz Elliff — Consultoría en IA y Automatización",
+        "name": "Juan Cruz Elliff — Automatización · Datos · IA",
         "url": "https://juancruz.elliff.ar/",
         "image": "https://juancruz.elliff.ar/og-cover.jpg",
-        "description": "Consultoría en IA y automatización: sistemas autónomos que ejecutan tareas críticas. Infraestructura digital para escalar sin saturar tu equipo.",
+        "description": "Automatización de tareas operativas, atención de consultas y reportes para PyMEs.",
         "areaServed": { "@type": "Country", "name": "Argentina" },
         "provider": { "@id": "https://juancruz.elliff.ar/#person" },
-        "priceRange": "USD 800 - Custom",
+        "priceRange": "Desde USD 800",
         "serviceType": [
-          "Infraestructura Web",
-          "Gestión de Canales",
-          "Automatización Back-Office"
+          "Web que capta y responde consultas",
+          "Atención automática de consultas",
+          "Reportes y procesos administrativos automáticos"
         ],
         "contactPoint": {
           "@type": "ContactPoint",
@@ -83,147 +82,198 @@
   }
   </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500&display=swap"
-    rel="stylesheet">
+  <!--
+    Analítica (pendiente de cuenta). Pegar acá el snippet de GA4 o Plausible.
+    Los eventos ya se emiten desde track(): "form_submit" y "whatsapp_click".
+  -->
+
+  <link rel="preload" href="/fonts/jost-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/jost-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+
   <style>
-    *,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    /* ── FUENTES (self-hosted, Manual JCE v1.1 §06) ── */
+    @font-face { font-family: 'Jost'; font-weight: 300; font-style: normal; font-display: swap; src: url('/fonts/jost-latin-300-normal.woff2') format('woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 400; font-style: normal; font-display: swap; src: url('/fonts/jost-latin-400-normal.woff2') format('woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 500; font-style: normal; font-display: swap; src: url('/fonts/jost-latin-500-normal.woff2') format('woff2'); }
+    @font-face { font-family: 'IBM Plex Mono'; font-weight: 400; font-style: normal; font-display: swap; src: url('/fonts/ibm-plex-mono-latin-400-normal.woff2') format('woff2'); }
+    @font-face { font-family: 'IBM Plex Mono'; font-weight: 500; font-style: normal; font-display: swap; src: url('/fonts/ibm-plex-mono-latin-500-normal.woff2') format('woff2'); }
 
+    /* ── TOKENS (Manual JCE v1.1 §05) ── */
     :root {
-      --black: #080808;
-      --black-2: #0E0E0E;
-      --cream: #EDE8E0;
-      --cream-dim: rgba(237, 232, 224, 0.70);
-      --cream-faint: rgba(237, 232, 224, 0.20);
-      --muted: #8A857E;
-      --muted-hi: #A6A19A;
-      --accent: #C8B89A;
-      --line: rgba(237, 232, 224, 0.10);
-      --line-hi: rgba(237, 232, 224, 0.20);
+      --marino: #13203A;
+      --marino-medio: #2B3D5C;
+      --tinta: #3A465C;
+      --pizarra: #6B7486;
+      --linea: #B9C0CC;
+      --niebla: #D9DDE3;
+      --papel: #F6F5F2;
+      --aux-oscuro: #AEB6C4;
+      --filete-oscuro: #4A5A78;
+
+      --font-sans: 'Jost', 'Futura PT', 'Century Gothic', sans-serif;
+      --font-mono: 'IBM Plex Mono', Menlo, Consolas, monospace;
+
+      --pad-x: clamp(24px, 6vw, 96px);
+      --pad-y: clamp(80px, 10vw, 136px);
+      --max: 1200px;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; scroll-padding-top: 84px; }
 
     body {
-      background: var(--black);
-      color: var(--cream);
-      font-family: 'Inter', sans-serif;
-      font-weight: 300;
-      line-height: 1.6;
-      overflow-x: hidden;
+      background: var(--papel);
+      color: var(--tinta);
+      font-family: var(--font-sans);
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 1.5;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
     }
 
-    ::-webkit-scrollbar {
-      width: 1px;
-    }
+    a { color: inherit; }
+    :focus-visible { outline: 2px solid var(--marino-medio); outline-offset: 3px; }
+    .on-dark :focus-visible { outline-color: var(--papel); }
 
-    ::-webkit-scrollbar-thumb {
-      background: var(--muted);
-    }
+    .container { max-width: var(--max); margin: 0 auto; }
+    .section { padding: var(--pad-y) var(--pad-x); border-top: 1px solid var(--niebla); }
+    .on-dark { background: var(--marino); color: var(--papel); border-top: none; }
 
-    /* ── UTILITY ─────────────────────────────── */
-    .u-label {
-      font-size: 0.62rem;
-      letter-spacing: 0.22em;
+    /* ── TIPOGRAFÍA (escala del manual, pantalla) ── */
+    .label {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      line-height: 1.4;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: var(--accent);
+      color: var(--marino-medio);
+    }
+    .on-dark .label { color: var(--aux-oscuro); }
+
+    h1, .h1 {
+      font-weight: 300;
+      font-size: clamp(40px, 6vw, 64px);
+      line-height: 1.15;
+      color: inherit;
+    }
+    h2 {
+      font-weight: 300;
+      font-size: clamp(30px, 4vw, 40px);
+      line-height: 1.2;
+      color: var(--marino);
+    }
+    .on-dark h2 { color: var(--papel); }
+    h3 {
       font-weight: 500;
+      font-size: 24px;
+      line-height: 1.3;
+      letter-spacing: 0.02em;
+      color: var(--marino);
+    }
+    p { max-width: 65ch; }
+    .lead { font-size: 19px; line-height: 1.5; }
+    .muted-dark { color: var(--aux-oscuro); }
+
+    .section-head { display: grid; gap: 16px; margin-bottom: 56px; }
+
+    /* ── BOTONES ── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      min-height: 48px;
+      padding: 0 28px;
+      font-family: var(--font-sans);
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      border: 1px solid var(--marino);
+      background: var(--marino);
+      color: var(--papel);
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s, border-color 0.2s;
+    }
+    .btn:hover { background: var(--marino-medio); border-color: var(--marino-medio); }
+    .btn-ghost { background: transparent; color: var(--marino); }
+    .btn-ghost:hover { background: var(--marino); color: var(--papel); }
+    .on-dark .btn { background: var(--papel); color: var(--marino); border-color: var(--papel); }
+    .on-dark .btn:hover { background: var(--niebla); border-color: var(--niebla); }
+    .on-dark .btn-ghost { background: transparent; color: var(--papel); border-color: var(--filete-oscuro); }
+    .on-dark .btn-ghost:hover { border-color: var(--papel); background: transparent; }
+    .btn[disabled] { opacity: 0.6; cursor: default; }
+
+    /* ── MARCA: composición horizontal (Especificaciones §03) ──
+       H = altura del monograma. Separación 0,33H a cada lado del filete.
+       Nombre: Jost 400, mayúsculas, cuerpo 0,28H, tracking 0,30em. */
+    .brand {
+      --H: 44px;
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+    }
+    .brand-mark { width: calc(var(--H) * 8 / 9); height: var(--H); flex-shrink: 0; }
+    .brand-rule {
+      width: 1px;
+      height: calc(var(--H) * 0.6);
+      margin: 0 calc(var(--H) * 0.33);
+      background: var(--linea);
+    }
+    .on-dark .brand-rule, .nav-dark .brand-rule { background: var(--filete-oscuro); }
+    .brand-name {
+      font-weight: 400;
+      font-size: calc(var(--H) * 0.28);
+      letter-spacing: 0.30em;
+      margin-right: -0.30em; /* compensa el tracking final */
+      text-transform: uppercase;
+      white-space: nowrap;
+      line-height: 1;
     }
 
-    /* ── NAV ─────────────────────────────────── */
-    nav {
+    /* ── NAV ── */
+    .nav {
       position: fixed;
       inset: 0 0 auto 0;
-      z-index: 200;
+      z-index: 100;
       height: 76px;
-      padding: 0 64px;
+      padding: 0 var(--pad-x);
       display: flex;
       align-items: center;
       justify-content: space-between;
-      transition: background 0.5s, border-color 0.5s;
-      border-bottom: 1px solid transparent;
+      background: var(--papel);
+      color: var(--marino);
+      border-bottom: 1px solid var(--niebla);
+      transition: background 0.3s, color 0.3s, border-color 0.3s;
     }
+    .nav.nav-dark { background: var(--marino); color: var(--papel); border-bottom-color: transparent; }
 
-    nav.scrolled {
-      background: rgba(8, 8, 8, 0.90);
-      backdrop-filter: blur(28px);
-      -webkit-backdrop-filter: blur(28px);
-      border-bottom-color: var(--line);
-    }
-
-    .nav-name {
-      font-family: 'Cormorant', serif;
-      font-weight: 400;
-      font-size: 1.05rem;
-      letter-spacing: 0.12em;
-      color: var(--cream);
+    .nav-links { display: flex; align-items: center; gap: 32px; }
+    .nav-links a:not(.btn) {
+      font-size: 15px;
       text-decoration: none;
+      color: inherit;
+      opacity: 0.85;
     }
+    .nav-links a:not(.btn):hover { opacity: 1; text-decoration: underline; text-underline-offset: 6px; }
+    .nav .btn { min-height: 40px; padding: 0 20px; }
+    .nav.nav-dark .btn { background: var(--papel); color: var(--marino); border-color: var(--papel); }
 
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 40px;
-    }
-
-    .nav-links a {
-      font-size: 0.65rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--muted-hi);
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-
-    .nav-links a:hover {
-      color: var(--cream);
-    }
-
-    .nav-cta {
-      font-size: 0.65rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--cream) !important;
-      text-decoration: none;
-      border-bottom: 1px solid var(--cream-faint);
-      padding-bottom: 2px;
-      transition: border-color 0.3s !important;
-    }
-
-    .nav-cta:hover {
-      border-color: var(--cream-dim) !important;
-    }
-
-    /* mobile */
     .nav-toggle {
       display: none;
+      width: 44px;
+      height: 44px;
+      align-items: center;
+      justify-content: center;
       flex-direction: column;
       gap: 6px;
       background: none;
       border: none;
+      color: inherit;
       cursor: pointer;
-      padding: 4px;
     }
-
-    .nav-toggle span {
-      display: block;
-      width: 22px;
-      height: 1px;
-      background: var(--cream);
-      transition: all 0.3s;
-    }
+    .nav-toggle span { display: block; width: 22px; height: 1.5px; background: currentColor; }
 
     .nav-mobile {
       display: none;
@@ -231,1093 +281,493 @@
       top: 76px;
       left: 0;
       right: 0;
-      background: rgba(8, 8, 8, 0.98);
-      padding: 36px 24px 44px;
+      padding: 24px var(--pad-x) 32px;
+      background: var(--papel);
+      color: var(--marino);
+      border-bottom: 1px solid var(--niebla);
       flex-direction: column;
-      gap: 28px;
-      border-bottom: 1px solid var(--line-hi);
+      gap: 20px;
+    }
+    .nav-mobile.open { display: flex; }
+    .nav-mobile a:not(.btn) { font-size: 17px; text-decoration: none; }
+    .nav-mobile .btn { align-self: flex-start; }
+
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .nav-toggle { display: flex; }
+      .brand { --H: 38px; }
     }
 
-    .nav-mobile.open {
-      display: flex;
-    }
-
-    .nav-mobile a {
-      font-size: 0.7rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--muted-hi);
-      text-decoration: none;
-    }
-
-    @media (max-width: 768px) {
-      nav {
-        padding: 0 24px;
-      }
-
-      .nav-links {
-        display: none;
-      }
-
-      .nav-toggle {
-        display: flex;
-      }
-    }
-
-    /* ── HERO ────────────────────────────────── */
+    /* ── HERO ── */
     .hero {
       min-height: 100vh;
       display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 38px 64px 44px;
-      position: relative;
-      overflow: hidden;
+      align-items: center;
+      padding: 140px var(--pad-x) 96px;
+    }
+    .hero .container { width: 100%; }
+    .hero h1 { max-width: 16ch; margin: 24px 0 28px; }
+    .hero .lead { color: var(--aux-oscuro); max-width: 56ch; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 40px; }
+    .hero-note { margin-top: 20px; font-family: var(--font-mono); font-size: 13px; color: var(--aux-oscuro); }
+
+    /* ── SOBRE MÍ ── */
+    .about-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 64px; align-items: start; }
+    .about-grid p + p { margin-top: 20px; }
+    .stack { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 32px; }
+    .chip {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      color: var(--tinta);
+      border: 1px solid var(--linea);
+      padding: 6px 12px;
     }
 
-    /* Ghost text in background */
-    .hero-ghost {
-      position: absolute;
-      right: -0.04em;
-      top: 50%;
-      transform: translateY(-58%);
-      font-family: 'Cormorant', serif;
-      font-size: clamp(16rem, 26vw, 30rem);
-      font-weight: 300;
-      line-height: 0.9;
-      color: rgba(237, 232, 224, 0.022);
-      pointer-events: none;
-      user-select: none;
-      letter-spacing: -0.05em;
-      white-space: nowrap;
-    }
-
-    /* Thin horizontal line through hero */
-    .hero-line-deco {
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 50%;
-      height: 1px;
-      background: var(--line);
-      pointer-events: none;
-    }
-
-    .hero-inner {
-      position: relative;
-      z-index: 2;
-      max-width: 1100px;
-    }
-
-    .hero-eyebrow {
-      margin-bottom: 44px;
-      opacity: 0;
-      animation: fadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
-    }
-
-    /* Line-reveal hero headline */
-    .hero-headline {
-      font-family: 'Cormorant', serif;
-      font-weight: 300;
-      font-size: clamp(3.8rem, 9.5vw, 9.5rem);
-      line-height: 1.0;
-      letter-spacing: -0.025em;
-      margin-bottom: 56px;
-    }
-
-    .hero-headline-wrap {
-      overflow: hidden;
-      display: block;
-      padding-bottom: 0.18em;
-      margin-bottom: -0.18em;
-    }
-
-    .hero-headline-line {
-      display: block;
-      transform: translateY(108%);
-      animation: lineReveal 1.1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-    }
-
-    .hero-headline-line.l1 {
-      animation-delay: 0.35s;
-    }
-
-    .hero-headline-line.l2 {
-      animation-delay: 0.50s;
-    }
-
-    .hero-headline-line.l3 {
-      animation-delay: 0.65s;
-    }
-
-    .hero-headline-line em {
-      font-style: italic;
-      color: var(--cream-dim);
-    }
-
-    @keyframes lineReveal {
-      to {
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes fadeUp {
-      from {
-        opacity: 0;
-        transform: translateY(16px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .hero-foot {
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
+    /* ── SERVICIOS ── */
+    .services { border-top: 1px solid var(--linea); }
+    .service {
+      display: grid;
+      grid-template-columns: 56px 1fr 220px;
       gap: 40px;
-      flex-wrap: wrap;
-      opacity: 0;
-      animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.9s forwards;
+      padding: 48px 0;
+      border-bottom: 1px solid var(--linea);
     }
+    .srv-num { font-family: var(--font-mono); font-size: 14px; color: var(--marino-medio); padding-top: 6px; }
+    .service h3 { margin-bottom: 12px; }
+    .service .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+    .price { text-align: right; }
+    .price-label { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--marino-medio); }
+    .price-value { font-weight: 300; font-size: 40px; line-height: 1.1; color: var(--marino); margin: 6px 0; }
+    .price-value small { font-family: var(--font-mono); font-size: 14px; font-weight: 400; margin-right: 6px; }
+    .price-sub { font-size: 14px; line-height: 1.4; color: var(--tinta); }
 
-    .hero-sub {
-      font-size: 0.88rem;
-      color: var(--muted-hi);
-      line-height: 1.85;
-      max-width: 340px;
-      font-weight: 300;
-    }
+    /* ── PROCESO ── */
+    .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border-top: 1px solid var(--linea); counter-reset: step; }
+    .step { padding: 32px 28px 8px 0; }
+    .step + .step { padding-left: 28px; border-left: 1px solid var(--niebla); }
+    .step-num { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.14em; color: var(--marino-medio); }
+    .step h3 { font-size: 20px; margin: 12px 0 10px; }
+    .step p { font-size: 16px; }
 
-    .hero-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 14px;
-      font-size: 0.68rem;
-      letter-spacing: 0.18em;
+    /* ── CASOS ── */
+    .cases { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .case { border: 1px solid var(--linea); padding: 28px; display: grid; gap: 14px; align-content: start; }
+    .case dl { display: grid; gap: 10px; font-size: 16px; }
+    .case dt { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--marino-medio); }
+    .pending { border-style: dashed; }
+    .tag-pending {
+      justify-self: start;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: var(--cream);
-      text-decoration: none;
-      transition: gap 0.4s;
+      color: var(--tinta);
+      background: var(--niebla);
+      padding: 3px 8px;
     }
 
-    .hero-btn:hover {
-      gap: 22px;
-    }
-
-    .hero-btn-line {
-      display: block;
-      width: 40px;
-      height: 1px;
-      background: var(--cream);
-      position: relative;
-      transition: width 0.4s;
-    }
-
-    .hero-btn:hover .hero-btn-line {
-      width: 56px;
-    }
-
-    .hero-btn-line::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      top: -3px;
-      width: 7px;
-      height: 7px;
-      border-right: 1px solid var(--cream);
-      border-top: 1px solid var(--cream);
-      transform: rotate(45deg);
-    }
-
-    /* Scroll indicator */
-    .hero-scroll {
-      position: absolute;
-      bottom: 88px;
-      right: 64px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 12px;
-      z-index: 2;
-    }
-
-    .hero-scroll-text {
-      font-size: 0.55rem;
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-      color: var(--muted);
-      writing-mode: vertical-rl;
-    }
-
-    .hero-scroll-bar {
-      width: 1px;
-      height: 64px;
-      background: linear-gradient(to bottom, var(--cream-faint), transparent);
-      animation: scrollPulse 2.8s ease-in-out infinite;
-    }
-
-    @keyframes scrollPulse {
-
-      0%,
-      100% {
-        opacity: 0.25;
-      }
-
-      50% {
-        opacity: 0.7;
-      }
-    }
-
-    /* ── SECTIONS BASE ───────────────────────── */
-    .section {
-      padding: 148px 64px;
-    }
-
-    .section-dark {
-      background: var(--black-2);
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .hr {
-      border: none;
-      border-top: 1px solid var(--line);
-    }
-
-    /* ── MANIFIESTO ──────────────────────────── */
-    .manifesto-grid {
-      display: grid;
-      grid-template-columns: 260px 1fr;
-      gap: 80px;
-      align-items: start;
-    }
-
-    .manifesto-left {
-      padding-top: 8px;
-    }
-
-    .manifesto-about {
-      font-size: 0.84rem;
-      color: var(--muted-hi);
-      line-height: 1.95;
-      margin-top: 20px;
-    }
-
-    .manifesto-nums {
-      margin-top: 56px;
-      padding-top: 40px;
-      border-top: 1px solid var(--line);
-      display: flex;
-      flex-direction: column;
-      gap: 28px;
-    }
-
-    .m-num-val {
-      font-family: 'Cormorant', serif;
-      font-size: 3rem;
-      font-weight: 300;
-      line-height: 1;
-      letter-spacing: -0.03em;
-      color: var(--cream);
-      margin-bottom: 4px;
-    }
-
-    .m-num-lbl {
-      font-size: 0.6rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
-
-    .manifesto-right {}
-
-    .manifesto-statement {
-      font-family: 'Cormorant', serif;
-      font-weight: 300;
-      font-size: clamp(1.75rem, 3.2vw, 3.2rem);
-      line-height: 1.28;
-      letter-spacing: -0.015em;
-      color: var(--cream);
-      margin-bottom: 44px;
-    }
-
-    .manifesto-statement em {
-      font-style: italic;
-      color: var(--cream-dim);
-    }
-
-    .manifesto-body {
-      font-size: 0.88rem;
-      color: var(--muted-hi);
-      line-height: 1.9;
-      max-width: 500px;
-    }
-
-    .manifesto-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 36px;
-    }
-
-    .m-tag {
-      font-size: 0.58rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--muted);
-      border: 1px solid var(--line-hi);
-      padding: 6px 14px;
-    }
-
-    /* ── SERVICES ────────────────────────────── */
-    .services-head {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: end;
-      margin-bottom: 80px;
-    }
-
-    .services-head-right {
-      font-size: 0.85rem;
-      color: var(--muted-hi);
-      line-height: 1.9;
-      max-width: 380px;
-      justify-self: end;
-    }
-
-    .service-row {
-      border-top: 1px solid var(--line-hi);
-      padding: 56px 0;
-      display: grid;
-      grid-template-columns: 56px 1fr 200px;
-      gap: 56px;
-      align-items: start;
-      position: relative;
-      transition: border-top-color 0.5s;
-    }
-
-    .service-row:last-child {
-      border-bottom: 1px solid var(--line-hi);
-    }
-
-    .service-row::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: rgba(237, 232, 224, 0.012);
-      opacity: 0;
-      transition: opacity 0.4s;
-      pointer-events: none;
-    }
-
-    .service-row:hover {
-      border-top-color: rgba(237, 232, 224, 0.28);
-    }
-
-    .service-row:hover::after {
-      opacity: 1;
-    }
-
-    .srv-num {
-      font-family: 'Cormorant', serif;
-      font-size: 0.95rem;
-      font-weight: 300;
-      color: var(--muted);
-      letter-spacing: 0.06em;
-      padding-top: 10px;
-    }
-
-    .srv-body {}
-
-    .srv-title {
-      font-family: 'Cormorant', serif;
-      font-weight: 300;
-      font-size: clamp(1.9rem, 3.2vw, 3.2rem);
-      line-height: 1.1;
-      letter-spacing: -0.015em;
-      margin-bottom: 20px;
-    }
-
-    .srv-title em {
-      font-style: italic;
-    }
-
-    .srv-desc {
-      font-size: 0.86rem;
-      color: var(--muted-hi);
-      line-height: 1.9;
-      max-width: 440px;
-    }
-
-    .srv-chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 24px;
-    }
-
-    .srv-chip {
-      font-size: 0.58rem;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--muted);
-      border: 1px solid var(--line-hi);
-      padding: 5px 12px;
-    }
-
-    .srv-price {
-      text-align: right;
-      padding-top: 10px;
-    }
-
-    .srv-price-label {
-      font-size: 0.58rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--muted-hi);
-      margin-bottom: 8px;
-    }
-
-    .srv-price-value {
-      font-family: 'Cormorant', serif;
-      font-size: 2.4rem;
-      font-weight: 300;
-      line-height: 1;
-      letter-spacing: -0.02em;
-      color: var(--cream);
-    }
-
-    .srv-price-sub {
-      font-size: 0.62rem;
-      color: var(--muted);
-      letter-spacing: 0.1em;
-      margin-top: 6px;
-      line-height: 1.6;
-    }
-
-    /* ── STATEMENT ───────────────────────────── */
-    .statement {
-      padding: 160px 64px;
-      text-align: center;
-      border-top: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
-    }
-
-    .statement-pre {
-      margin-bottom: 40px;
-    }
-
-    .statement-text {
-      font-family: 'Cormorant', serif;
-      font-weight: 300;
-      font-size: clamp(2rem, 5.5vw, 5.5rem);
-      line-height: 1.14;
-      letter-spacing: -0.025em;
-      max-width: 940px;
-      margin: 0 auto 48px;
-    }
-
-    .statement-text em {
-      font-style: italic;
-      color: var(--cream-dim);
-    }
-
-    .statement-sub {
-      font-size: 0.85rem;
-      color: var(--muted-hi);
-      max-width: 380px;
-      margin: 0 auto 56px;
-      line-height: 1.85;
-    }
-
-    /* ── CONTACT ─────────────────────────────── */
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 120px;
-      align-items: start;
-    }
-
-    .contact-headline {
-      font-family: 'Cormorant', serif;
-      font-weight: 300;
-      font-size: clamp(2.4rem, 4.5vw, 4.5rem);
-      line-height: 1.08;
-      letter-spacing: -0.025em;
-      margin-bottom: 32px;
-    }
-
-    .contact-headline em {
-      font-style: italic;
-    }
-
-    .contact-body {
-      font-size: 0.86rem;
-      color: var(--muted-hi);
-      line-height: 1.9;
-      margin-bottom: 52px;
-      max-width: 360px;
-    }
-
-    .contact-items {
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
-    }
-
-    .c-item {
-      display: flex;
-      align-items: baseline;
-      gap: 0;
-      border-bottom: 1px solid var(--line);
-      padding-bottom: 18px;
-    }
-
-    .c-item:last-child {
-      border-bottom: none;
-    }
-
-    .c-lbl {
-      font-size: 0.58rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--muted);
-      width: 88px;
-      flex-shrink: 0;
-    }
-
-    .c-val {
-      font-size: 0.86rem;
-      color: var(--cream-dim);
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-
-    .c-val:hover {
-      color: var(--cream);
-    }
-
-    /* Form */
-    .contact-form {}
-
-    .f-group {
-      margin-bottom: 28px;
-    }
-
-    .f-group label {
-      display: block;
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--muted-hi);
-      margin-bottom: 12px;
-    }
-
-    .f-group input,
-    .f-group textarea {
-      width: 100%;
-      background: transparent;
-      border: none;
-      border-bottom: 1px solid var(--line-hi);
-      padding: 10px 0 14px;
-      color: var(--cream);
-      font-family: 'Inter', sans-serif;
-      font-size: 0.88rem;
-      font-weight: 300;
-      outline: none;
-      transition: border-color 0.3s;
-      border-radius: 0;
-      -webkit-appearance: none;
-    }
-
-    .f-group input::placeholder,
-    .f-group textarea::placeholder {
-      color: var(--muted);
-      opacity: 1;
-    }
-
-    .f-group input:focus,
-    .f-group textarea:focus {
-      border-bottom-color: var(--cream-dim);
-    }
-
-    .f-group textarea {
-      resize: none;
-      min-height: 96px;
-    }
-
-    .f-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 28px;
-    }
-
-    .f-submit {
-      background: var(--cream);
-      color: var(--black);
-      border: none;
-      padding: 18px 52px;
-      font-family: 'Inter', sans-serif;
-      font-size: 0.65rem;
-      font-weight: 500;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
+    /* ── POSICIONAMIENTO ── */
+    .statement { text-align: left; }
+    .statement .h1 { max-width: 22ch; margin: 20px 0 24px; color: var(--papel); }
+    .statement p { color: var(--aux-oscuro); }
+    .statement .btn { margin-top: 36px; }
+
+    /* ── FAQ ── */
+    .faq { border-top: 1px solid var(--linea); max-width: 860px; }
+    .faq details { border-bottom: 1px solid var(--linea); }
+    .faq summary {
+      list-style: none;
       cursor: pointer;
-      margin-top: 12px;
-      transition: background 0.3s;
+      padding: 24px 40px 24px 0;
+      position: relative;
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--marino);
     }
-
-    .f-submit:hover {
-      background: var(--accent);
-    }
-
-    /* ── FOOTER ──────────────────────────────── */
-    footer {
-      padding: 44px 64px;
-      border-top: 1px solid var(--line);
-    }
-
-    .footer-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
-      flex-wrap: wrap;
-    }
-
-    .f-name {
-      font-family: 'Cormorant', serif;
-      font-size: 0.95rem;
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary::after {
+      content: '+';
+      position: absolute;
+      right: 4px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-family: var(--font-mono);
       font-weight: 400;
-      letter-spacing: 0.1em;
-      color: var(--cream-dim);
+      color: var(--marino-medio);
     }
+    .faq details[open] summary::after { content: '−'; }
+    .faq .answer { padding: 0 0 24px; display: grid; gap: 12px; }
 
-    .f-copy {
-      font-size: 0.6rem;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--muted);
+    /* ── CONTACTO ── */
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+    .contact-grid h2 { margin: 16px 0 20px; }
+    .contact-list { margin-top: 40px; border-top: 1px solid var(--linea); }
+    .c-item { display: grid; grid-template-columns: 110px 1fr; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--linea); align-items: baseline; }
+    .c-lbl { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--marino-medio); }
+    .c-val { color: var(--marino); text-decoration: none; }
+    .c-val:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+    .form { display: grid; gap: 24px; }
+    .f-row { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .field { display: grid; gap: 8px; }
+    .field label { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--marino-medio); }
+    .field input, .field select, .field textarea {
+      width: 100%;
+      font: inherit;
+      color: var(--marino);
+      background: #FFFFFF;
+      border: 1px solid var(--linea);
+      border-radius: 0;
+      padding: 12px 14px;
+      -webkit-appearance: none;
+      appearance: none;
     }
-
-    .f-links {
-      display: flex;
-      gap: 32px;
+    .field select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%232B3D5C' stroke-width='1.5'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      padding-right: 40px;
     }
+    .field textarea { min-height: 128px; resize: vertical; }
+    .field input::placeholder, .field textarea::placeholder { color: var(--pizarra); }
+    .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--marino-medio); outline: 1px solid var(--marino-medio); }
+    .form-status { min-height: 24px; font-size: 15px; color: var(--marino); }
+    .form .btn { justify-self: start; }
 
-    .f-links a {
-      font-size: 0.6rem;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--muted);
-      text-decoration: none;
-      transition: color 0.3s;
+    /* ── FOOTER ── */
+    footer { padding: 56px var(--pad-x); }
+    .footer-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; }
+    footer .brand { --H: 56px; }
+    .footer-meta { display: grid; gap: 6px; justify-items: end; }
+    .footer-meta a { color: var(--aux-oscuro); text-decoration: none; font-size: 15px; }
+    .footer-meta a:hover { color: var(--papel); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1000px) {
+      .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+      .service { grid-template-columns: 40px 1fr; }
+      .price { grid-column: 2; text-align: left; }
+      .steps { grid-template-columns: 1fr 1fr; }
+      .step:nth-child(3) { padding-left: 0; border-left: none; }
+      .cases { grid-template-columns: 1fr; }
     }
-
-    .f-links a:hover {
-      color: var(--cream-dim);
+    @media (max-width: 640px) {
+      .service { grid-template-columns: 1fr; gap: 12px; }
+      .price { grid-column: 1; }
+      .steps { grid-template-columns: 1fr; }
+      .step, .step + .step { padding: 24px 0 8px; border-left: none; border-bottom: 1px solid var(--niebla); }
+      .f-row { grid-template-columns: 1fr; }
+      .footer-inner { flex-direction: column; align-items: flex-start; }
+      .footer-meta { justify-items: start; }
+      .hero { min-height: auto; padding-top: 128px; }
     }
-
-    /* ── REVEAL ANIMATIONS ───────────────────── */
-    .reveal {
-      opacity: 0;
-      transform: translateY(22px);
-      transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1),
-        transform 1s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    .reveal.in {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .reveal-fade {
-      opacity: 0;
-      transition: opacity 1.1s ease;
-    }
-
-    .reveal-fade.in {
-      opacity: 1;
-    }
-
-    .d1 {
-      transition-delay: 0.10s;
-    }
-
-    .d2 {
-      transition-delay: 0.22s;
-    }
-
-    .d3 {
-      transition-delay: 0.34s;
-    }
-
-    .d4 {
-      transition-delay: 0.46s;
-    }
-
-    /* ── RESPONSIVE ──────────────────────────── */
-    @media (max-width: 1100px) {
-      .service-row {
-        grid-template-columns: 44px 1fr;
-        gap: 36px;
-      }
-
-      .srv-price {
-        grid-column: 2;
-        text-align: left;
-      }
-
-      .services-head {
-        grid-template-columns: 1fr;
-        gap: 24px;
-      }
-
-      .services-head-right {
-        justify-self: start;
-      }
-
-      .manifesto-grid {
-        grid-template-columns: 1fr;
-        gap: 56px;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .section {
-        padding: 100px 24px;
-      }
-
-      .statement {
-        padding: 100px 24px;
-      }
-
-      .hero {
-        padding: 0 24px 60px;
-      }
-
-      .hero-scroll {
-        display: none;
-      }
-
-      .hero-headline {
-        font-size: clamp(3rem, 13vw, 5rem);
-      }
-
-      .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 64px;
-      }
-
-      .service-row {
-        grid-template-columns: 1fr;
-        gap: 16px;
-        padding: 44px 0;
-      }
-
-      .srv-num {
-        display: none;
-      }
-
-      .srv-price {
-        text-align: left;
-      }
-
-      .f-row {
-        grid-template-columns: 1fr;
-        gap: 0;
-      }
-
-      footer {
-        padding: 36px 24px;
-      }
-
-      .footer-inner {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
-      }
-    }
-
     @media (prefers-reduced-motion: reduce) {
-
-      .reveal,
-      .reveal-fade {
-        opacity: 1;
-        transform: none;
-        transition: none;
-      }
-
-      .hero-headline-line {
-        transform: none;
-        animation: none;
-      }
-
-      .hero-eyebrow,
-      .hero-foot {
-        opacity: 1;
-        transform: none;
-        animation: none;
-      }
-
-      .hero-scroll-bar {
-        animation: none;
-      }
-
-      .hero-ghost {
-        display: none;
-      }
+      html { scroll-behavior: auto; }
+      * { transition: none !important; }
     }
   </style>
 </head>
 
 <body>
 
-  <!-- ═══════════════════ NAV ═══════════════════ -->
-  <nav id="nav">
-    <a href="#inicio" class="nav-name">Juan Cruz Elliff</a>
+  <!-- Monograma JCE: geometría exacta del SVG maestro (Manual v1.1 §02). Color por currentColor. -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <mask id="jce-gap" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="120">
+        <rect x="0" y="0" width="120" height="120" fill="white" />
+        <path d="M72 6 V76" stroke="black" stroke-width="12.5" />
+      </mask>
+      <symbol id="jce" viewBox="10 2 96 108">
+        <path d="M90.64 34.29 A40 40 0 1 0 90.64 85.71" fill="none" stroke="currentColor" stroke-width="7" mask="url(#jce-gap)" />
+        <path d="M72 6 V76 A13 13 0 0 1 46 76" fill="none" stroke="currentColor" stroke-width="7" />
+        <polygon points="72,52.5 96,52.5 89,59.5 72,59.5" fill="currentColor" />
+        <polygon points="68.5,6 75.5,6 75.5,2" fill="currentColor" />
+      </symbol>
+    </defs>
+  </svg>
 
-    <div class="nav-links">
-      <a href="#sobre">Criterio</a>
-      <a href="#servicios">Soluciones</a>
-      <a href="#contacto" class="nav-cta">Iniciar Conversación</a>
-    </div>
+  <!-- ═══════════ NAV ═══════════ -->
+  <header class="nav nav-dark" id="nav">
+    <a href="#inicio" class="brand" aria-label="Juan Cruz Elliff — inicio">
+      <svg class="brand-mark" aria-hidden="true"><use href="#jce" /></svg>
+      <span class="brand-rule" aria-hidden="true"></span>
+      <span class="brand-name">Juan Cruz Elliff</span>
+    </a>
 
-    <button class="nav-toggle" id="navBtn" aria-label="Menú">
+    <nav class="nav-links" aria-label="Principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#proceso">Cómo trabajo</a>
+      <a href="#casos">Casos</a>
+      <a href="#faq">Preguntas</a>
+      <a href="#contacto" class="btn">Pedir diagnóstico</a>
+    </nav>
+
+    <button class="nav-toggle" id="navBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMobile">
       <span></span><span></span>
     </button>
-    <div class="nav-mobile" id="navMobile">
-      <a href="#sobre" onclick="closeNav()">Criterio</a>
-      <a href="#servicios" onclick="closeNav()">Soluciones</a>
-      <a href="#contacto" onclick="closeNav()">Iniciar Conversación</a>
-    </div>
-  </nav>
+    <nav class="nav-mobile" id="navMobile" aria-label="Principal móvil">
+      <a href="#servicios">Servicios</a>
+      <a href="#proceso">Cómo trabajo</a>
+      <a href="#casos">Casos</a>
+      <a href="#faq">Preguntas</a>
+      <a href="#contacto" class="btn">Pedir diagnóstico</a>
+    </nav>
+  </header>
 
-  <!-- ═══════════════════ HERO ══════════════════ -->
-  <section class="hero" id="inicio">
-    <div class="hero-ghost" aria-hidden="true">JCE</div>
-    <div class="hero-line-deco" aria-hidden="true"></div>
+  <main>
 
-    <div class="hero-inner">
-      <div class="hero-eyebrow">
-        <span class="u-label">minimalismo operativo · escala sin caos</span>
-      </div>
-
-      <h1 class="hero-headline">
-        <span class="hero-headline-wrap"><span class="hero-headline-line l1">Negocio en marcha,</span></span>
-        <span class="hero-headline-wrap"><span class="hero-headline-line l2">Mente</span></span>
-        <span class="hero-headline-wrap"><span class="hero-headline-line l3"><em>en la estrategia</em></span></span>
-      </h1>
-
-      <div class="hero-foot">
-        <p class="hero-sub">
-          Sistemas que ejecutan tareas críticas de forma autónoma. Traduzco procesos complejos en infraestructura digital para quienes buscan escalar con orden y tecnología real.
+    <!-- ═══════════ HERO ═══════════ -->
+    <section class="hero on-dark" id="inicio">
+      <div class="container">
+        <span class="label">Automatización · Datos · IA</span>
+        <h1>Automatizo tareas operativas y reportes para PyMEs.</h1>
+        <p class="lead">
+          Diseño e implemento sistemas que se encargan del trabajo repetitivo (consultas, carga de datos, reportes)
+          para que tu equipo crezca sin sumar horas de gestión.
         </p>
-        <a href="#contacto" class="hero-btn">
-          Iniciar Conversación
-          <span class="hero-btn-line" aria-hidden="true"></span>
-        </a>
-      </div>
-    </div>
-
-    <div class="hero-scroll" aria-hidden="true">
-      <span class="hero-scroll-text">Scroll</span>
-      <span class="hero-scroll-bar"></span>
-    </div>
-  </section>
-
-  <!-- ═══════════════════ MANIFIESTO ════════════ -->
-  <section class="section" id="sobre">
-    <div class="container">
-      <div class="manifesto-grid">
-
-        <div class="manifesto-left">
-          <div class="u-label reveal">Criterio Profesional</div>
-          <p class="manifesto-about reveal d1">
-            Desarrollo la infraestructura digital que permite a una empresa crecer sin saturar su estructura humana.
-            Trabajo con organizaciones que entienden que el crecimiento no depende de más horas de gestión, sino de
-            mejores sistemas de ejecución. Mi enfoque es técnico, pragmático y orientado a resultados tangibles.
-          </p>
-
-          <div class="manifesto-nums">
-            <div class="reveal d1">
-              <div class="m-num-val" data-target="3">0</div>
-              <div class="m-num-lbl">Semanas de implementación media</div>
-            </div>
-            <div class="reveal d2">
-              <div class="m-num-val">100%</div>
-              <div class="m-num-lbl">Enfoque en escalabilidad</div>
-            </div>
-          </div>
+        <div class="hero-actions">
+          <a href="#contacto" class="btn">Pedir diagnóstico</a>
+          <a href="https://wa.me/5492346331233" class="btn btn-ghost js-wa" target="_blank" rel="noopener">Escribir por WhatsApp</a>
         </div>
-
-        <div class="manifesto-right">
-          <p class="manifesto-statement reveal">
-            No entrego maquetas ni promesas. Entrego <em>activos digitales</em> con rigor de ingeniería y velocidad de
-            consultoría.
-          </p>
-          <p class="manifesto-body reveal d1">
-            Me especializo en estructuras donde la operación diaria consume el tiempo estratégico del equipo. Mi labor
-            es identificar procesos críticos y delegarlos en sistemas que garantizan consistencia y precisión 24/7.
-            <br><br>
-            Cada proyecto finaliza con una solución integrada a su ecosistema actual, diseñada para absorber demanda sin
-            incrementar costos fijos.
-          </p>
-          <div class="manifesto-tags reveal d2">
-            <span class="m-tag">Procesamiento de Datos</span>
-            <span class="m-tag">Flujos Autónomos</span>
-            <span class="m-tag">Interfaces de Respuesta</span>
-            <span class="m-tag">Integración de Sistemas</span>
-            <span class="m-tag">Arquitectura de Software</span>
-          </div>
-        </div>
-
+        <p class="hero-note">Diagnóstico inicial de 15 minutos, sin cargo.</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <hr class="hr">
-
-  <!-- ═══════════════════ SERVICIOS ═════════════ -->
-  <section class="section section-dark" id="servicios">
-    <div class="container">
-
-      <div class="services-head">
+    <!-- ═══════════ SOBRE MÍ ═══════════ -->
+    <section class="section" id="sobre">
+      <div class="container about-grid">
+        <div class="section-head" style="margin-bottom:0">
+          <span class="label">Sobre mí</span>
+          <h2>Criterio técnico, foco en resultados.</h2>
+        </div>
         <div>
-          <div class="u-label reveal">Soluciones Estratégicas</div>
-          <h2
-            style="font-family:'Cormorant',serif; font-weight:300; font-size:clamp(2.2rem,4vw,4rem); letter-spacing:-0.02em; line-height:1.1; margin-top:16px;"
-            class="reveal d1">
-            Implementaciones<br><em style="font-style:italic; color:var(--cream-dim)">de alto impacto.</em>
-          </h2>
-        </div>
-        <p class="services-head-right reveal d2">
-          Modelos de trabajo directo: alcances definidos, plazos breves y sistemas funcionales desde el despliegue. El
-          objetivo es la autonomía operativa.
-        </p>
-      </div>
-
-      <!-- Servicio 01 -->
-      <div class="service-row reveal" style="padding-left: 20px; padding-right: 20px;">
-        <span class="srv-num">01</span>
-        <div class="srv-body">
-          <h3 class="srv-title">Infraestructura Web<br><em>con lógica avanzada.</em></h3>
-          <p class="srv-desc">
-            Despliegue de sitios de alto rendimiento con captura inteligente de leads y sistemas de respuesta con
-            entendimiento de contexto comercial.
+          <p class="lead">
+            Soy Juan Cruz Elliff. Trabajo en datos y automatización: identifico el proceso que más tiempo le consume a
+            tu equipo, lo automatizo y lo dejo integrado a las herramientas que ya usás.
           </p>
-          <div class="srv-chips">
-            <span class="srv-chip">Desarrollo a medida</span>
-            <span class="srv-chip">Lógica de respuesta</span>
-            <span class="srv-chip">Optimización de conversión</span>
+          <p>
+            Mi enfoque es técnico y pragmático. No entrego maquetas ni promesas: cada proyecto termina con un sistema
+            funcionando, pensado para absorber más demanda sin aumentar costos fijos.
+          </p>
+          <div class="stack" aria-label="Herramientas">
+            <span class="chip">SQL</span>
+            <span class="chip">Python</span>
+            <span class="chip">Power BI</span>
           </div>
         </div>
-        <div class="srv-price">
-          <div class="srv-price-label">Inversión desde</div>
-          <div class="srv-price-value">800</div>
-          <div class="srv-price-sub">USD · Proyecto cerrado<br>según requerimientos</div>
-        </div>
       </div>
+    </section>
 
-      <!-- Servicio 02 -->
-      <div class="service-row reveal d1" style="padding-left: 20px; padding-right: 20px;">
-        <span class="srv-num">02</span>
-        <div class="srv-body">
-          <h3 class="srv-title">Gestión de Canales<br><em>desatendida.</em></h3>
-          <p class="srv-desc">
-            Sistemas de atención autónoma que resuelven consultas, califican prospectos y derivan casos críticos a
-            humanos de forma inteligente.
-          </p>
-          <div class="srv-chips">
-            <span class="srv-chip">Omnicanalidad</span>
-            <span class="srv-chip">Flujos de calificación</span>
-            <span class="srv-chip">Integración CRM</span>
-          </div>
+    <!-- ═══════════ SERVICIOS ═══════════ -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="section-head">
+          <span class="label">Servicios</span>
+          <h2>Tres formas de sacarle trabajo manual a tu equipo.</h2>
+          <p>Alcance definido, plazos breves y sistemas funcionando desde la entrega.</p>
         </div>
-        <div class="srv-price">
-          <div class="srv-price-label">Inversión desde</div>
-          <div class="srv-price-value">1.200</div>
-          <div class="srv-price-sub">USD · Implementación<br>+ Soporte mensual</div>
-        </div>
-      </div>
 
-      <!-- Servicio 03 -->
-      <div class="service-row reveal d2" style="padding-left: 20px; padding-right: 20px;">
-        <span class="srv-num">03</span>
-        <div class="srv-body">
-          <h3 class="srv-title">Automatización de<br><em>Back-Office.</em></h3>
-          <p class="srv-desc">
-            Eliminación de la carga administrativa mediante procesamiento automático de datos, reportes dinámicos e
-            interconexión total de herramientas.
-          </p>
-          <div class="srv-chips">
-            <span class="srv-chip">BI & Data</span>
-            <span class="srv-chip">ETL de procesos</span>
-            <span class="srv-chip">Alertas automáticas</span>
-          </div>
-        </div>
-        <div class="srv-price">
-          <div class="srv-price-label">Inversión</div>
-          <div class="srv-price-value">Custom</div>
-          <div class="srv-price-sub">USD · Sujeto a<br>análisis de procesos</div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ═══════════════════ STATEMENT ════════════ -->
-  <section class="statement">
-    <div class="container">
-      <div class="statement-pre reveal-fade">
-        <span class="u-label">Posicionamiento</span>
-      </div>
-      <p class="statement-text reveal">
-        El costo de oportunidad de operar manualmente<br>
-        <em>es la principal barrera para escalar.</em>
-      </p>
-      <p class="statement-sub reveal d1">
-        Colaboro con empresas que están listas para dejar de gestionar procesos y empezar a auditar resultados.
-      </p>
-      <a href="#contacto" class="hero-btn reveal d2" style="justify-content:center;">
-        Agendar llamada con Juan Cruz
-        <span class="hero-btn-line" aria-hidden="true"></span>
-      </a>
-    </div>
-  </section>
-
-  <!-- ═══════════════════ CONTACTO ══════════════ -->
-  <section class="section" id="contacto">
-    <div class="container">
-      <div class="contact-grid">
-
-        <div>
-          <div class="u-label reveal">Contacto</div>
-          <h2 class="contact-headline reveal d1">
-            Analicemos su<br><em>próximo salto.</em>
-          </h2>
-          <p class="contact-body reveal d2">
-            El primer paso es una llamada de diagnóstico de 15 minutos para entender su operación actual y evaluar la
-            viabilidad técnica de una implementación.
-          </p>
-
-          <div class="contact-items reveal d3">
-            <div class="c-item">
-              <span class="c-lbl">Llamar</span>
-              <a href="tel:+5492346331233" class="c-val">+54 9 2346 33-1233</a>
+        <div class="services">
+          <article class="service">
+            <span class="srv-num">01</span>
+            <div>
+              <h3>Web que capta y responde consultas</h3>
+              <p>Sitio rápido con captura de contactos y respuesta automática que entiende el contexto comercial de cada consulta.</p>
+              <div class="chips">
+                <span class="chip">Desarrollo a medida</span>
+                <span class="chip">Respuesta automática</span>
+                <span class="chip">Optimización de conversión</span>
+              </div>
             </div>
+            <div class="price">
+              <div class="price-label">Desde</div>
+              <div class="price-value"><small>USD</small>800</div>
+              <div class="price-sub">Proyecto cerrado según requerimientos</div>
+            </div>
+          </article>
+
+          <article class="service">
+            <span class="srv-num">02</span>
+            <div>
+              <h3>Atención automática de consultas</h3>
+              <p>Un sistema que responde preguntas frecuentes, califica prospectos y deriva a una persona los casos que lo necesitan.</p>
+              <div class="chips">
+                <span class="chip">Varios canales</span>
+                <span class="chip">Calificación de prospectos</span>
+                <span class="chip">Integración con CRM</span>
+              </div>
+            </div>
+            <div class="price">
+              <div class="price-label">Desde</div>
+              <div class="price-value"><small>USD</small>1.200</div>
+              <div class="price-sub">Implementación + soporte mensual</div>
+            </div>
+          </article>
+
+          <article class="service">
+            <span class="srv-num">03</span>
+            <div>
+              <h3>Reportes y procesos administrativos automáticos</h3>
+              <p>Procesamiento automático de datos, tableros que se actualizan solos y alertas cuando algo se sale de lo esperado.</p>
+              <div class="chips">
+                <span class="chip">BI y datos</span>
+                <span class="chip">ETL</span>
+                <span class="chip">Alertas automáticas</span>
+              </div>
+            </div>
+            <div class="price">
+              <div class="price-label">Precio</div>
+              <div class="price-value">A cotizar</div>
+              <div class="price-sub">Según análisis de procesos</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ PROCESO ═══════════ -->
+    <section class="section" id="proceso">
+      <div class="container">
+        <div class="section-head">
+          <span class="label">Cómo trabajo</span>
+          <h2>De la primera llamada al sistema funcionando.</h2>
+        </div>
+        <ol class="steps" role="list">
+          <li class="step" style="list-style:none">
+            <span class="step-num">01</span>
+            <h3>Diagnóstico</h3>
+            <p>Llamada de 15 minutos, sin cargo, para entender tu operación y evaluar si la implementación es viable.</p>
+          </li>
+          <li class="step" style="list-style:none">
+            <span class="step-num">02</span>
+            <h3>Propuesta</h3>
+            <p>Alcance, plazo y precio definidos por escrito antes de empezar.</p>
+          </li>
+          <li class="step" style="list-style:none">
+            <span class="step-num">03</span>
+            <h3>Implementación</h3>
+            <p>Construyo el sistema y lo integro a las herramientas que ya usás.</p>
+          </li>
+          <li class="step" style="list-style:none">
+            <span class="step-num">04</span>
+            <h3>Entrega y soporte</h3>
+            <p>Queda funcionando. Los servicios con soporte mensual incluyen seguimiento y ajustes.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ═══════════ CASOS ═══════════
+         PENDIENTE: reemplazar con proyectos reales antes de publicar.
+         Estructura: problema → solución → resultado medible. -->
+    <section class="section" id="casos">
+      <div class="container">
+        <div class="section-head">
+          <span class="label">Casos</span>
+          <h2>Proyectos entregados.</h2>
+        </div>
+        <div class="cases">
+          <article class="case pending">
+            <span class="tag-pending">Pendiente</span>
+            <h3>Nombre del proyecto</h3>
+            <dl>
+              <div><dt>Problema</dt><dd>Qué tarea consumía tiempo o generaba errores.</dd></div>
+              <div><dt>Solución</dt><dd>Qué se implementó y con qué herramientas.</dd></div>
+              <div><dt>Resultado</dt><dd>Dato medible: horas ahorradas, tiempo de respuesta, errores.</dd></div>
+            </dl>
+          </article>
+          <article class="case pending">
+            <span class="tag-pending">Pendiente</span>
+            <h3>Nombre del proyecto</h3>
+            <dl>
+              <div><dt>Problema</dt><dd>—</dd></div>
+              <div><dt>Solución</dt><dd>—</dd></div>
+              <div><dt>Resultado</dt><dd>—</dd></div>
+            </dl>
+          </article>
+          <article class="case pending">
+            <span class="tag-pending">Pendiente</span>
+            <h3>Nombre del proyecto</h3>
+            <dl>
+              <div><dt>Problema</dt><dd>—</dd></div>
+              <div><dt>Solución</dt><dd>—</dd></div>
+              <div><dt>Resultado</dt><dd>—</dd></div>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ POSICIONAMIENTO ═══════════ -->
+    <section class="section on-dark statement">
+      <div class="container">
+        <span class="label">Por qué automatizar</span>
+        <p class="h1">Operar a mano tiene un costo: es lo que más frena el crecimiento.</p>
+        <p class="lead">Trabajo con empresas que quieren dejar de gestionar tareas y empezar a revisar resultados.</p>
+        <a href="#contacto" class="btn">Pedir diagnóstico</a>
+      </div>
+    </section>
+
+    <!-- ═══════════ FAQ ═══════════ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <span class="label">Preguntas frecuentes</span>
+          <h2>Lo que suelen preguntar antes de empezar.</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>¿Cuánto cuesta?</summary>
+            <div class="answer">
+              <p>La web con captura y respuesta de consultas arranca en USD 800, como proyecto cerrado. La atención automática arranca en USD 1.200 de implementación más un soporte mensual. La automatización de reportes y procesos administrativos se cotiza después de analizar tus procesos.</p>
+            </div>
+          </details>
+          <details>
+            <summary>¿Cómo empezamos?</summary>
+            <div class="answer">
+              <p>Con una llamada de diagnóstico de 15 minutos, sin cargo, para entender tu operación y ver si la implementación es viable.</p>
+            </div>
+          </details>
+          <details>
+            <summary>¿Qué pasa después de la entrega?</summary>
+            <div class="answer">
+              <p>La atención automática incluye soporte mensual.</p>
+              <span class="tag-pending">Pendiente: soporte de los otros servicios</span>
+            </div>
+          </details>
+          <details>
+            <summary>¿Cuánto tarda un proyecto?</summary>
+            <div class="answer"><span class="tag-pending">Pendiente: plazos reales</span></div>
+          </details>
+          <details>
+            <summary>¿El sistema queda a mi nombre?</summary>
+            <div class="answer"><span class="tag-pending">Pendiente: propiedad de código y cuentas</span></div>
+          </details>
+          <details>
+            <summary>¿Cómo se paga?</summary>
+            <div class="answer"><span class="tag-pending">Pendiente: medios y esquema de pago</span></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ CONTACTO ═══════════ -->
+    <section class="section" id="contacto">
+      <div class="container contact-grid">
+        <div>
+          <span class="label">Contacto</span>
+          <h2>Contame qué proceso querés ordenar.</h2>
+          <p>El primer paso es una llamada de diagnóstico de 15 minutos, sin cargo, para entender tu operación y evaluar la viabilidad técnica de una implementación.</p>
+
+          <div class="contact-list">
             <div class="c-item">
               <span class="c-lbl">WhatsApp</span>
-              <a href="https://wa.me/5492346331233" target="_blank" rel="noopener" class="c-val">Escribir por WhatsApp</a>
+              <a href="https://wa.me/5492346331233" target="_blank" rel="noopener" class="c-val js-wa">Escribir por WhatsApp</a>
+            </div>
+            <div class="c-item">
+              <span class="c-lbl">Teléfono</span>
+              <a href="tel:+5492346331233" class="c-val">+54 9 2346 33-1233</a>
             </div>
             <div class="c-item">
               <span class="c-lbl">Email</span>
@@ -1325,172 +775,122 @@
             </div>
             <div class="c-item">
               <span class="c-lbl">LinkedIn</span>
-              <a href="https://www.linkedin.com/in/elliffjuancruz" target="_blank" rel="noopener" class="c-val">Juan
-                Cruz Elliff</a>
+              <a href="https://www.linkedin.com/in/elliffjuancruz" target="_blank" rel="noopener" class="c-val">Juan Cruz Elliff</a>
             </div>
-            <!--<div class="c-item">
-              <span class="c-lbl">Instagram</span>
-              <a href="https://instagram.com/juanelliff_" target="_blank" rel="noopener" class="c-val">@juanelliff_</a>
-            </div>-->
           </div>
         </div>
 
-        <div class="contact-form reveal d2">
-          <form id="cform">
-            <input type="hidden" name="access_key" value="d5420d0c-5785-4606-ad6d-81865bff5873">
-            <input type="hidden" name="subject" value="Nuevo contacto desde el portfolio">
-            <input type="hidden" name="from_name" value="Portfolio Juan Cruz Elliff">
-            <div class="f-row">
-              <div class="f-group">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="name" placeholder="Nombre completo" required>
-              </div>
-              <div class="f-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="nombre@empresa.com" required>
-              </div>
+        <form id="cform" class="form" novalidate>
+          <input type="hidden" name="access_key" value="d5420d0c-5785-4606-ad6d-81865bff5873">
+          <input type="hidden" name="subject" value="Nuevo contacto desde juancruz.elliff.ar">
+          <input type="hidden" name="from_name" value="Web Juan Cruz Elliff">
+          <div class="f-row">
+            <div class="field">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="name" autocomplete="name" placeholder="Nombre y apellido" required>
             </div>
-            <div class="f-group">
-              <label for="servicio">Servicio de interés</label>
-              <select id="servicio" name="servicio" required style="width:100%; background:transparent; border:none; border-bottom:1px solid var(--line-hi); padding:10px 0 14px; color:var(--cream); font-family:'Inter',sans-serif; font-size:0.88rem; font-weight:300; outline:none; transition:border-color 0.3s; border-radius:0; -webkit-appearance:none; appearance:none; cursor:pointer;">
-                <option value="" disabled selected style="background:var(--black); color:var(--muted);">Elegir servicio</option>
-                <option value="web" style="background:var(--black);">Infraestructura Web con lógica avanzada</option>
-                <option value="canales" style="background:var(--black);">Gestión de Canales desatendida</option>
-                <option value="backoffice" style="background:var(--black);">Automatización de Back-Office</option>
-                <option value="otro" style="background:var(--black);">Otro / Servicio personalizado</option>
-              </select>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" placeholder="nombre@empresa.com" required>
             </div>
-            <div class="f-group">
-              <label for="msg">¿Qué proceso desea optimizar?</label>
-              <textarea id="msg" name="msg"
-                placeholder="Describa brevemente la tarea o cuello de botella que hoy limita su crecimiento."
-                required></textarea>
-            </div>
-            <button type="submit" class="f-submit" id="fBtn">Aplicar solicitud</button>
-          </form>
-        </div>
+          </div>
+          <div class="field">
+            <label for="servicio">Servicio de interés</label>
+            <select id="servicio" name="servicio" required>
+              <option value="" disabled selected>Elegí un servicio</option>
+              <option value="web">Web que capta y responde consultas</option>
+              <option value="atencion">Atención automática de consultas</option>
+              <option value="reportes">Reportes y procesos administrativos</option>
+              <option value="otro">Otro / no estoy seguro</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="msg">¿Qué proceso querés automatizar?</label>
+            <textarea id="msg" name="msg" placeholder="Contá brevemente qué tarea o cuello de botella hoy te frena." required></textarea>
+          </div>
+          <button type="submit" class="btn" id="fBtn">Pedir diagnóstico</button>
+          <p class="form-status" id="fStatus" role="status" aria-live="polite"></p>
+        </form>
       </div>
-    </div>
-  </section>
-  <!-- ═══════════════════ FOOTER ════════════════ -->
-  <footer>
-    <div class="footer-inner">
-      <span class="f-name">Juan Cruz Elliff</span>
-      <span class="f-copy">© 2026 · Criterio en Sistemas Autónomos y Eficiencia</span>
-      <div class="f-links">
-        <a href="#sobre">Criterio</a>
-        <a href="#servicios">Soluciones</a>
-        <a href="#contacto">Contacto</a>
+    </section>
+
+  </main>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="on-dark">
+    <div class="container footer-inner">
+      <a href="#inicio" class="brand" aria-label="Juan Cruz Elliff — inicio">
+        <svg class="brand-mark" aria-hidden="true"><use href="#jce" /></svg>
+        <span class="brand-rule" aria-hidden="true"></span>
+        <span class="brand-name">Juan Cruz Elliff</span>
+      </a>
+      <div class="footer-meta">
+        <span class="label">Automatización · Datos · IA</span>
+        <a href="https://www.linkedin.com/in/elliffjuancruz" target="_blank" rel="noopener">LinkedIn</a>
+        <span class="label">© 2026</span>
       </div>
     </div>
   </footer>
 
   <script>
-    // ── Nav scroll ──────────────────────────────
-    const nav = document.getElementById('nav');
-    window.addEventListener('scroll', () => {
-      nav.classList.toggle('scrolled', window.scrollY > 60);
-    }, { passive: true });
+    // ── Analítica: no-op hasta que se cargue GA4 (gtag) o Plausible ──
+    function track(name, props) {
+      if (typeof window.gtag === 'function') window.gtag('event', name, props || {});
+      if (typeof window.plausible === 'function') window.plausible(name, { props: props || {} });
+    }
+    document.querySelectorAll('.js-wa').forEach(a => a.addEventListener('click', () => track('whatsapp_click')));
 
-    // ── Nav mobile ──────────────────────────────
+    // ── Nav: oscuro sobre hero, claro sobre contenido ──
+    const nav = document.getElementById('nav');
+    const hero = document.getElementById('inicio');
+    const navIO = new IntersectionObserver(([e]) => {
+      nav.classList.toggle('nav-dark', e.isIntersecting);
+    }, { rootMargin: '-76px 0px 0px 0px', threshold: 0 });
+    navIO.observe(hero);
+
+    // ── Menú móvil ──
     const navBtn = document.getElementById('navBtn');
     const navMobile = document.getElementById('navMobile');
-    if (navBtn && navMobile) {
-      navBtn.addEventListener('click', () => navMobile.classList.toggle('open'));
+    function setMenu(open) {
+      navMobile.classList.toggle('open', open);
+      navBtn.setAttribute('aria-expanded', String(open));
+      navBtn.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+      if (open) nav.classList.remove('nav-dark');
     }
-    function closeNav() { navMobile && navMobile.classList.remove('open'); }
+    navBtn.addEventListener('click', () => setMenu(!navMobile.classList.contains('open')));
+    navMobile.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
 
-    // ── Intersection reveal ─────────────────────
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('in');
-          io.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.10, rootMargin: '0px 0px -40px 0px' });
-
-    document.querySelectorAll('.reveal, .reveal-fade').forEach(el => io.observe(el));
-
-    // ── Counter ─────────────────────────────────
-    function counter(el) {
-      const n = parseInt(el.dataset.target);
-      if (!n) return;
-      const t0 = performance.now();
-      const dur = 1000;
-      (function tick(now) {
-        const p = Math.min((now - t0) / dur, 1);
-        const ease = 1 - Math.pow(1 - p, 3);
-        el.textContent = Math.round(ease * n);
-        if (p < 1) requestAnimationFrame(tick);
-      })(t0);
-    }
-    const cio = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) { counter(e.target); cio.unobserve(e.target); }
-      });
-    }, { threshold: 0.6 });
-    document.querySelectorAll('[data-target]').forEach(el => cio.observe(el));
-
-    // ── Hero parallax ───────────────────────────
-    const ghost = document.querySelector('.hero-ghost');
-    let ticking = false;
-    window.addEventListener('scroll', () => {
-      if (!ticking) {
-        requestAnimationFrame(() => {
-          if (ghost) ghost.style.transform = `translateY(calc(-58% + ${window.scrollY * 0.08}px))`;
-          ticking = false;
-        });
-        ticking = true;
-      }
-    }, { passive: true });
-
-    // ── Form ────────────────────────────────────
+    // ── Formulario (Web3Forms) ──
     const cform = document.getElementById('cform');
-    if (cform) {
-      cform.addEventListener('submit', async function (e) {
-        e.preventDefault();
-        const btn = document.getElementById('fBtn');
-        btn.textContent = 'Enviando...';
-        btn.disabled = true;
-
-        try {
-          const formData = new FormData(cform);
-          const servicio = document.getElementById('servicio').value;
-          const msg = document.getElementById('msg').value;
-          formData.set('message', 'Servicio: ' + (servicio || '—') + '\n\n' + msg);
-          formData.set('replyto', document.getElementById('email').value);
-
-          const res = await fetch('https://api.web3forms.com/submit', {
-            method: 'POST',
-            body: formData,
-          });
-          const json = await res.json();
-
-          if (json.success) {
-            btn.textContent = 'Solicitud enviada';
-            btn.style.background = 'var(--accent)';
-            cform.reset();
-            document.getElementById('servicio').value = '';
-            setTimeout(() => {
-              btn.textContent = 'Aplicar solicitud';
-              btn.style.background = '';
-              btn.disabled = false;
-            }, 5000);
-          } else {
-            throw new Error(json.message || 'Error al enviar');
-          }
-        } catch {
-          btn.textContent = 'Error — escribime directo';
-          btn.style.background = 'rgba(220,80,80,0.3)';
-          setTimeout(() => {
-            btn.textContent = 'Aplicar solicitud';
-            btn.style.background = '';
-            btn.disabled = false;
-          }, 4000);
-        }
-      });
-    }
+    const fBtn = document.getElementById('fBtn');
+    const fStatus = document.getElementById('fStatus');
+    cform.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (!cform.checkValidity()) {
+        fStatus.textContent = 'Completá todos los campos para enviar.';
+        cform.reportValidity();
+        return;
+      }
+      fBtn.disabled = true;
+      fBtn.textContent = 'Enviando…';
+      fStatus.textContent = '';
+      try {
+        const fd = new FormData(cform);
+        fd.set('message', 'Servicio: ' + (fd.get('servicio') || '—') + '\n\n' + fd.get('msg'));
+        fd.set('replyto', fd.get('email'));
+        const res = await fetch('https://api.web3forms.com/submit', { method: 'POST', body: fd });
+        const json = await res.json();
+        if (!json.success) throw new Error(json.message || 'Error');
+        cform.reset();
+        fStatus.textContent = 'Solicitud enviada. Te escribo para coordinar el diagnóstico.';
+        track('form_submit', { servicio: fd.get('servicio') });
+      } catch {
+        fStatus.innerHTML = 'No se pudo enviar. Escribime por <a href="https://wa.me/5492346331233" target="_blank" rel="noopener">WhatsApp</a>.';
+      } finally {
+        fBtn.disabled = false;
+        fBtn.textContent = 'Pedir diagnóstico';
+      }
+    });
   </script>
 </body>
 
