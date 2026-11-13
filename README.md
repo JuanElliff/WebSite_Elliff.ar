@@ -1,6 +1,6 @@
 # juancruz.elliff.ar
 
-Sitio personal de Juan Cruz Elliff — Automatización · Datos · IA.
+Sitio personal de Juan Cruz Elliff — Desarrollo de Software · Ingeniería de Datos.
 
 Sitio estático de una sola página (`index.html`), sin build.
 
@@ -19,12 +19,13 @@ Sigue el Documento Maestro de Identidad Visual JCE v1.1:
 | `index.html` | Sitio completo |
 | `favicon.svg`, `favicon-32.png` | Favicon (monograma Papel sobre Marino, 52 % del lado) |
 | `apple-touch-icon.png` | Ícono iOS 180 × 180 |
-| `og-cover.jpg` | Imagen para redes 1200 × 630 |
+| `og-cover.jpg` | Imagen para redes 1200 × 630 (contiene el descriptor anterior; ver pendientes) |
 | `fonts/` | Jost y IBM Plex Mono (subset latin, woff2) |
 | `robots.txt`, `sitemap.xml` | SEO |
 
 ## Pendientes antes de publicar
 
-- Sección **Casos**: sumar proyectos reales cuando estén disponibles.
+- `og-cover.jpg` muestra el descriptor "Automatización · Datos · IA": regenerar si se adopta el nuevo descriptor.
+- Manual JCE v1.1 fija "Automatización · Datos · IA" como descriptor: registrar el cambio en una nueva versión del manual.
 - **Analítica**: pegar el snippet de GA4 o Plausible en el `<head>` (los eventos ya se emiten).
 - **Email**: migrar a casilla del dominio cuando corresponda.
