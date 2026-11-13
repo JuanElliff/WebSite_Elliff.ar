@@ -25,7 +25,6 @@ Sigue el Documento Maestro de Identidad Visual JCE v1.1:
 
 ## Pendientes antes de publicar
 
-- Sección **Casos**: reemplazar las tarjetas marcadas "Pendiente" con proyectos reales.
-- **FAQ**: completar plazos, soporte, propiedad del código y forma de pago.
+- Sección **Casos**: sumar proyectos reales cuando estén disponibles.
 - **Analítica**: pegar el snippet de GA4 o Plausible en el `<head>` (los eventos ya se emiten).
 - **Email**: migrar a casilla del dominio cuando corresponda.
