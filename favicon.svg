@@ -1,7 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#080808"/>
-  <text x="50%" y="50%" dy=".07em"
-        text-anchor="middle" dominant-baseline="middle"
-        font-family="Georgia, 'Cormorant Garamond', serif"
-        font-size="38" font-weight="400" fill="#C8B89A">J</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <rect width="100" height="100" fill="#13203A"/>
+  <svg x="26.889" y="24.000" width="46.222" height="52.000" viewBox="10 2 96 108" fill="none">
+    <defs><mask id="jce-gap" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="120"><rect x="0" y="0" width="120" height="120" fill="white"/><path d="M72 6 V76" stroke="black" stroke-width="12.5"/></mask></defs>
+    <path d="M90.64 34.29 A40 40 0 1 0 90.64 85.71" stroke="#F6F5F2" stroke-width="7" mask="url(#jce-gap)"/>
+    <path d="M72 6 V76 A13 13 0 0 1 46 76" stroke="#F6F5F2" stroke-width="7"/>
+    <polygon points="72,52.5 96,52.5 89,59.5 72,59.5" fill="#F6F5F2"/>
+    <polygon points="68.5,6 75.5,6 75.5,2" fill="#F6F5F2"/>
+  </svg>
 </svg>
