@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Seguridad: respaldo por meta. Lo ideal es enviarlo como cabecera HTTP (ver _headers / vercel.json). -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://web3forms.com https://hcaptcha.com https://*.hcaptcha.com; style-src 'self' https://hcaptcha.com https://*.hcaptcha.com; img-src 'self' data:; font-src 'self'; connect-src https://api.web3forms.com https://hcaptcha.com https://*.hcaptcha.com; frame-src https://hcaptcha.com https://*.hcaptcha.com; form-action https://api.web3forms.com; base-uri 'none'; object-src 'none'; upgrade-insecure-requests">
+  <!-- Seguridad: respaldo por meta. Lo ideal es enviarlo como cabecera HTTP (ver vercel.json). -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src https://api.web3forms.com; frame-src 'none'; form-action https://api.web3forms.com; base-uri 'none'; object-src 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Juan Cruz Elliff | Desarrollo de Software e Ingeniería de Datos</title>
 
@@ -434,7 +434,8 @@
             <label for="msg">Contame sobre tu proyecto</label>
             <textarea id="msg" name="msg" placeholder="Describí brevemente qué necesitás desarrollar, cuáles son los objetivos y cualquier información relevante." required minlength="20" maxlength="3000"></textarea>
           </div>
-          <div class="h-captcha" data-captcha="true"></div>
+          <!-- Honeypot de Web3Forms (usuarios reales no lo ven). Reemplazar por hCaptcha cuando se active. -->
+          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
           <button type="submit" class="btn" id="fBtn">Enviar consulta</button>
           <p class="form-status" id="fStatus" role="status" aria-live="polite"></p>
           <p class="form-alt">También podés contactarme directamente por <a href="https://wa.me/5492346331233" target="_blank" rel="noopener noreferrer" class="js-wa">WhatsApp</a>.</p>
@@ -460,7 +461,6 @@
     </div>
   </footer>
 
-  <script src="https://web3forms.com/client/script.js" async defer></script>
   <script src="/main.js" defer></script>
 </body>
 

@@ -369,3 +369,4 @@ footer .brand { --H: 56px; }
 /* ── Utilidades (reemplazan atributos style="" inline, bloqueados por la CSP) ── */
 .sprite { position: absolute; }
 .section-head--flush { margin-bottom: 0; }
+.hp { display: none; }

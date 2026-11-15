@@ -62,10 +62,6 @@ cform.addEventListener('submit', async (e) => {
     fStatus.textContent = 'Elegí un tipo de proyecto válido.';
     return;
   }
-  if (!fd.get('h-captcha-response')) {
-    fStatus.textContent = 'Completá la verificación antes de enviar.';
-    return;
-  }
   if (Date.now() - lastSent < COOLDOWN_MS) {
     fStatus.textContent = 'Ya recibí tu consulta. Esperá unos segundos para enviar otra.';
     return;
@@ -88,7 +84,6 @@ cform.addEventListener('submit', async (e) => {
   } catch {
     showError('No se pudo enviar.');
   } finally {
-    if (window.hcaptcha && typeof window.hcaptcha.reset === 'function') window.hcaptcha.reset();
     fBtn.disabled = false;
     fBtn.textContent = 'Enviar consulta';
   }
